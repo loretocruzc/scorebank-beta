@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover"><title>ScoreBank v0.10.18 Mobile Beta</title><meta name="theme-color" content="#172033"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="ScoreBank"><style>
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover"><title>ScoreBank v0.10.19 Mobile Beta</title><meta name="theme-color" content="#172033"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="ScoreBank"><style>
 :root{--navy:#172033;--navy2:#24314c;--bg:#f3f5f9;--card:#fff;--text:#182033;--muted:#6b7280;--line:#d8deea;--green:#18794e;--green-soft:#eaf7f0}*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}.topbar{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:22px 18px;box-shadow:0 4px 18px #0003}.topbar>div,.shell{max-width:1040px;margin:auto}.brand{font-size:32px;font-weight:800}.version{margin-top:5px;color:#dce4f2;font-size:14px}.shell{padding:24px 16px 60px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 10px 30px rgba(23,32,51,.07);margin-bottom:18px}.hero{padding:30px}h1,h2{margin-top:0}h1{font-size:clamp(30px,5vw,48px);margin-bottom:10px}h2{font-size:26px}p{line-height:1.55}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.full{grid-column:1/-1}label{display:block;font-weight:700;margin-bottom:7px}input,select{width:100%;padding:13px 14px;border:1px solid #bcc6d6;border-radius:12px;font-size:17px;background:#fff}.button-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}button{border:0;border-radius:12px;padding:13px 18px;font-size:16px;font-weight:750;cursor:pointer;background:var(--green);color:#fff}button.secondary{background:#e9edf4;color:var(--text)}button.ghost{background:transparent;color:var(--navy);border:1px solid var(--line)}.summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}.summary>div{padding:14px;border-radius:13px;background:#f7f8fb;border:1px solid #e4e8f0}.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--green-soft);color:var(--green);font-weight:800;font-size:13px}.notice{padding:14px 16px;border-radius:13px;background:#fff7df;border:1px solid #efd58c;margin:16px 0}.success{padding:14px 16px;border-radius:13px;background:var(--green-soft);border:1px solid #b8dfc8;color:#105c3c;margin:16px 0}.index-list{display:grid;gap:12px}.index-row{display:grid;grid-template-columns:260px 1fr;gap:14px;align-items:center;padding:12px;border:1px solid var(--line);border-radius:14px}.index-row label{margin:0}@media(max-width:720px){.grid,.summary{grid-template-columns:1fr}.index-row{grid-template-columns:1fr}.card{padding:18px}}
 .source-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:20px 0}.source-card{border:1px solid var(--line);border-radius:16px;padding:18px;background:#fbfcfe}.source-title{font-size:12px;font-weight:850;letter-spacing:.08em;color:var(--green);margin-bottom:8px}.source-card h3{margin:0 0 10px}.response{font-size:20px;font-weight:800;line-height:1.35}.source-meta{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:12px;margin-top:14px;color:#667085;font-size:13px}.official-row{background:var(--green-soft);border-color:#b8dfc8}.index-row label small{display:block;color:#667085;font-weight:500;margin-top:4px}.official-row input{background:#fff;color:#12263f;font-weight:650}@media(max-width:720px){.source-grid{grid-template-columns:1fr}}
 /* Build 004 — impresión compacta en una sola hoja US Letter */
@@ -291,7 +291,7 @@ input[type=file]{max-width:100%;overflow:hidden}
 
 .index-celebration-symbol{display:flex;justify-content:center;align-items:center;min-height:58px;margin:2px 0 8px}.index-celebration-symbol svg{display:block;max-width:58px;max-height:58px}
 
-</style></head><body><header class="topbar"><div><div class="brand">🎼 ScoreBank</div><div class="version">v0.10.18 · Mobile Beta · Build 118</div></div></header><main id="app" class="shell"></main><script>
+</style></head><body><header class="topbar"><div><div class="brand">🎼 ScoreBank</div><div class="version">v0.10.19 · Mobile Beta · Build 119</div></div></header><main id="app" class="shell"></main><script>
 (function initializeLiturgicalCalendar(global) {
   'use strict';
 
@@ -8009,7 +8009,7 @@ function enforcePreparationContext(){
   return true;
 }
 function persist(){const safe={...state,compiledMassSettingFile:null,massFolderFiles:[],massFolderCatalog:[],libraryFiles:[],libraryCatalog:null,libraryManifest:null,celebrationModel:state.celebrationModel?.toPlainObject?.()||null};localStorage.setItem('scorebank-v070-build007',JSON.stringify(safe));}
-function welcome(){app.innerHTML=`<section class="card hero"><span class="badge">BUILD 118 · IDENTIDAD VISUAL DEL INDEX</span><h1>Weekly Mass Book</h1><p>La celebración es ahora la clave litúrgica principal; la fecha ayuda a identificar, validar y organizar la misa.</p><div class="success"><strong>Nuevo:</strong> El INDEX identifica automáticamente la celebración: cruz para difuntos, anillos entrelazados para bodas/aniversarios e iglesia clásica para las demás celebraciones.</div><div class="button-row"><button id="startBtn">Preparar celebración</button></div></section>`;document.getElementById('startBtn').addEventListener('click',renderForm);}
+function welcome(){app.innerHTML=`<section class="card hero"><span class="badge">BUILD 119 · FLUJO LITÚRGICO COMPLETO</span><h1>Weekly Mass Book</h1><p>La celebración es ahora la clave litúrgica principal; la fecha ayuda a identificar, validar y organizar la misa.</p><div class="success"><strong>Nuevo:</strong> Salmo y Aclamación del Evangelio ahora aparecen dentro de la selección musical en su lugar litúrgico; el título del Salmo se edita sin interferencias y la pantalla evita resúmenes redundantes.</div><div class="button-row"><button id="startBtn">Preparar celebración</button></div></section>`;document.getElementById('startBtn').addEventListener('click',renderForm);}
 function renderForm(){
   const e=uiIsSpanish();
   const suggested=window.ScoreBankLiturgicalCalendar?.identify?.(state.date,calendarLanguage());
@@ -8472,6 +8472,32 @@ function funeralLiturgicalPanel(entry,e,labels){
     <div class="match-hint">${help}</div>
   </div>`;
 }
+function liturgicalPlanningSection(section,e){
+  if(!['psalm','gospel'].includes(section))return '';
+  const src=sourceFor();
+  const isPsalm=section==='psalm';
+  const title=isPsalm?(e?'Salmo responsorial':'Responsorial Psalm'):(e?'Aclamación del Evangelio':'Gospel Acclamation');
+  const automaticItem=isPsalm?src?.psalm:src?.gospel;
+  const manual=manualPsalmAcclamationChoice(section);
+  const sourceName=String(src?.source||'').trim();
+  const reference=String(automaticItem?.reference||'').trim();
+  const response=String(automaticItem?.response||'').trim();
+  const verse=!isPsalm?String(automaticItem?.verse||'').trim():'';
+  const automaticText=[reference,response,verse].filter(Boolean);
+  const automaticReady=Boolean(src?.resolved&&automaticItem&&automaticText.length);
+  const subtitle=independentPsalmAcclamationMode()
+    ?(e?'Elección libre · búsqueda manual':'Free choice · manual search')
+    :(manual?(e?'Elección manual':'Manual choice'):(e?'Selección litúrgica automática':'Automatic liturgical selection'));
+  if(manual){
+    return `<section class="suggestion-section liturgical-planning-section" data-moment="${section}"><div class="suggestion-head"><h3>${title}</h3><small>${subtitle}</small></div>${funeralLiturgicalPanel({key:section},e,{})}</section>`;
+  }
+  const automaticMarkup=automaticReady
+    ? `<div class="success liturgical-auto-choice"><strong>${e?'Selección litúrgica automática':'Automatic liturgical selection'}</strong>${reference?`<br>${esc(reference)}`:''}${response?`<br><span>${esc(response)}</span>`:''}${verse?`<br><small>${esc(verse)}</small>`:''}${sourceName?`<br><small>${esc(sourceName)}</small>`:''}</div>`
+    : `<div class="notice"><strong>${e?'Fuente litúrgica pendiente':'Liturgical source pending'}.</strong> ${e?'ScoreBank aún no tiene una ficha exacta para esta celebración; puedes escoger manualmente.':'ScoreBank does not yet have an exact record for this celebration; you may choose manually.'}</div>`;
+  const manualLabel=isPsalm?(e?'Buscar / usar otro Salmo o canto':'Search / use another Psalm or song'):(e?'Buscar / usar otro Aleluya':'Search / use another Alleluia');
+  return `<section class="suggestion-section liturgical-planning-section" data-moment="${section}"><div class="suggestion-head"><h3>${title}</h3><small>${subtitle}</small></div>${automaticMarkup}<button type="button" class="ghost liturgical-manual-override-btn" data-section="${section}">${manualLabel}</button></section>`;
+}
+
 function plannerRowsForFuneralMoment(data,moment){
   const allowed=new Set(expectedPlanningFamilies());
   return (Array.isArray(data?.moments?.[moment])?data.moments[moment]:[]).filter(row=>{
@@ -8496,7 +8522,7 @@ function funeralSuggestionSections(data,e){
   };
   const meditationValue=state.index.meditation||'';
   const meditation=`<section class="suggestion-section funeral-manual-section meditation-section" data-moment="meditation"><div class="suggestion-head"><h3>${labels.meditation}</h3><small>${e?'Manual · elección libre':'Manual · free choice'}</small></div>${meditationValue?`<div class="suggestion-picked"><strong>${e?'Seleccionado':'Selected'}:</strong> ${esc(meditationValue)}</div>`:''}${manualSongPanel('meditation',e)}</section>`;
-  return `<div class="notice funeral-planning-note"><strong>${e?'Repertorio Funeral — Difuntos 2 de noviembre':'Funeral repertoire — All Souls, November 2'}:</strong> ${note}</div>${recommended('entrance')}${recommended('gifts')}${recommended('communion')}${meditation}${recommended('sending')}`;
+  return `<div class="notice funeral-planning-note"><strong>${e?'Repertorio Funeral — Difuntos 2 de noviembre':'Funeral repertoire — All Souls, November 2'}:</strong> ${note}</div>${recommended('entrance')}${liturgicalPlanningSection('psalm',e)}${liturgicalPlanningSection('gospel',e)}${recommended('gifts')}${recommended('communion')}${meditation}${recommended('sending')}`;
 }
 
 function suggestionSections(data,e){
@@ -8523,7 +8549,7 @@ function suggestionSections(data,e){
   const meditation=`<section class="suggestion-section meditation-section" data-moment="meditation"><div class="suggestion-head"><h3>${meditationLabel}</h3><small>${e?'Opcional · biblioteca privada':'Optional · private library'}</small></div>${meditationSuggestions.length?`<select id="planningMeditationSelect"><option value="">${e?'Sugerencias de meditación…':'Meditation suggestions…'}</option>${meditationOptions}</select>`:''}${meditationValue?`<div class="suggestion-picked"><strong>${e?'Seleccionado':'Selected'}:</strong> ${esc(meditationValue)}</div>`:''}${manualSongPanel('meditation',e)}</section>`;
   const marianValue=state.index.marian||'';
   const marian=weddingMode()?`<section class="suggestion-section wedding-marian-section" data-moment="marian"><div class="suggestion-head"><h3>${e?'Canto a María':'Marian Song'}</h3><small>${e?'Boda · después de la Meditación · opcional':'Wedding · after Meditation · optional'}</small></div>${marianValue?`<div class="suggestion-picked"><strong>${e?'Seleccionado':'Selected'}:</strong> ${esc(marianValue)}</div>`:''}${marianSuggestionPanel(e)}${manualSongPanel('marian',e)}</section>`:'';
-  return sectionMarkup('entrance',labels.entrance)+sectionMarkup('gifts',labels.gifts)+sectionMarkup('communion',labels.communion)+meditation+marian+sectionMarkup('sending',labels.sending);
+  return sectionMarkup('entrance',labels.entrance)+liturgicalPlanningSection('psalm',e)+liturgicalPlanningSection('gospel',e)+sectionMarkup('gifts',labels.gifts)+sectionMarkup('communion',labels.communion)+meditation+marian+sectionMarkup('sending',labels.sending);
 }
 
 function folderMatches(setting){if(!setting||!state.massFolderFiles.length)return [];const needles=[setting.name,...(setting.aliases||[])].map(x=>x.toLowerCase().replace(/[^a-z0-9áéíóúüñ]+/g,' '));return state.massFolderFiles.filter(f=>{const n=f.toLowerCase().replace(/[^a-z0-9áéíóúüñ]+/g,' ');return needles.some(q=>n.includes(q));});}
@@ -8714,7 +8740,50 @@ function bindSuggestions(renderTarget='result'){
     const title=String(entry.title||file.name.replace(/\.pdf$/i,'')).trim();
     applyManualSongTitle(moment,title,entry.relativePath);
   }));
+  if(renderTarget==='result')bindResultLiturgicalControls();
 }
+function bindResultLiturgicalControls(){
+  const rerender=()=>result();
+  document.querySelectorAll('.liturgical-manual-override-btn').forEach(btn=>btn.addEventListener('click',()=>{
+    const section=btn.dataset.section;if(!['psalm','gospel'].includes(section))return;
+    state.manualLiturgicalOverrides=state.manualLiturgicalOverrides||{psalm:false,gospel:false};
+    state.manualLiturgicalOverrides[section]=true;
+    state.manualLiturgicalQueries=state.manualLiturgicalQueries||{psalm:'',gospel:''};
+    state.manualLiturgicalQueries[section]='';
+    state.index[section]='';
+    delete state.librarySelections[section];delete state.libraryPageRanges[section];
+    state.sourcePairLinked=false;state.sourcePairProfile=null;state.pageLocatorStatus='idle';state.pageLocatorMessage='';state.assemblyStatus='idle';state.assemblyMessage='';
+    persist();if(state.libraryCatalog)rebuildLibraryManifest();rerender();
+  }));
+  document.querySelectorAll('.liturgical-auto-restore-btn').forEach(btn=>btn.addEventListener('click',()=>{
+    const section=btn.dataset.section;if(!['psalm','gospel'].includes(section))return;
+    state.manualLiturgicalOverrides=state.manualLiturgicalOverrides||{psalm:false,gospel:false};state.manualLiturgicalOverrides[section]=false;
+    state.manualLiturgicalQueries=state.manualLiturgicalQueries||{psalm:'',gospel:''};state.manualLiturgicalQueries[section]='';
+    delete state.librarySelections[section];delete state.libraryPageRanges[section];
+    syncOfficialFields();persist();if(state.libraryCatalog)rebuildLibraryManifest();rerender();
+  }));
+  document.querySelectorAll('.funeral-liturgical-index-text').forEach(input=>{
+    input.addEventListener('input',()=>{const section=input.dataset.section;if(!['psalm','gospel'].includes(section))return;state.index[section]=String(input.value||'');state.assemblyStatus='idle';state.assemblyMessage='';persist();});
+    input.addEventListener('change',()=>{const section=input.dataset.section;if(!['psalm','gospel'].includes(section))return;state.index[section]=String(input.value||'').trim();state.assemblyStatus='idle';state.assemblyMessage='';if(state.libraryCatalog)rebuildLibraryManifest();else persist();});
+  });
+  document.querySelectorAll('.funeral-psalm-suggestion-select').forEach(select=>select.addEventListener('change',()=>{
+    const title=String(select.value||'').trim();if(!title)return;state.index.psalm=title;state.manualLiturgicalQueries=state.manualLiturgicalQueries||{psalm:'',gospel:''};state.manualLiturgicalQueries.psalm=title;delete state.librarySelections.psalm;delete state.libraryPageRanges.psalm;state.assemblyStatus='idle';state.assemblyMessage='';persist();if(state.libraryCatalog)rebuildLibraryManifest();rerender();
+  }));
+  document.querySelectorAll('.funeral-liturgical-search-btn').forEach(btn=>btn.addEventListener('click',()=>{
+    const section=btn.dataset.section;const input=document.querySelector(`.funeral-liturgical-query[data-section="${section}"]`);const titleInput=document.querySelector(`.funeral-liturgical-index-text[data-section="${section}"]`);const explicit=String(input?.value||'').trim();const completeTitle=String(titleInput?.value||state.index?.[section]||'').trim();state.index[section]=completeTitle;state.manualLiturgicalQueries=state.manualLiturgicalQueries||{psalm:'',gospel:''};state.manualLiturgicalQueries[section]=explicit||completeTitle;persist();rerender();
+  }));
+  document.querySelectorAll('.funeral-liturgical-query').forEach(input=>{
+    input.addEventListener('input',()=>{const section=input.dataset.section;state.manualLiturgicalQueries=state.manualLiturgicalQueries||{psalm:'',gospel:''};state.manualLiturgicalQueries[section]=String(input.value||'');persist();});
+    input.addEventListener('keydown',(event)=>{if(event.key!=='Enter')return;event.preventDefault();const section=input.dataset.section;state.manualLiturgicalQueries=state.manualLiturgicalQueries||{psalm:'',gospel:''};state.manualLiturgicalQueries[section]=String(input.value||'').trim();persist();rerender();});
+  });
+  document.querySelectorAll('.funeral-liturgical-match-btn').forEach(btn=>btn.addEventListener('click',(event)=>{
+    event.preventDefault();event.stopPropagation();const section=btn.dataset.section;const path=String(btn.dataset.path||'');if(!path||!['psalm','gospel'].includes(section))return;state.librarySelections[section]=path;if(!independentPsalmAcclamationMode()){state.manualLiturgicalOverrides=state.manualLiturgicalOverrides||{psalm:false,gospel:false};state.manualLiturgicalOverrides[section]=true;}updateFuneralLiturgicalTitleFromCandidate(section,findCatalogCandidate(path));state.manualLiturgicalQueries=state.manualLiturgicalQueries||{psalm:'',gospel:''};state.manualLiturgicalQueries[section]='';delete state.libraryPageRanges[section];state.sourcePairLinked=false;state.sourcePairProfile=null;state.assemblyStatus='idle';state.assemblyMessage='';persist();if(state.libraryCatalog)rebuildLibraryManifest();rerender();
+  }));
+  document.querySelectorAll('.manual-liturgical-panel .library-manual-file').forEach(input=>input.addEventListener('change',()=>{
+    const file=input.files?.[0];if(!file)return;const section=input.dataset.section;if(!['psalm','gospel'].includes(section))return;if(!independentPsalmAcclamationMode()){state.manualLiturgicalOverrides=state.manualLiturgicalOverrides||{psalm:false,gospel:false};state.manualLiturgicalOverrides[section]=true;}const baseEntry=window.ScoreBankLibraryMatchResolver?.createBrowserCatalog?.([file])?.[0];const manualPath=`Manual/${section}/${file.name}`;const entry=baseEntry?{...baseEntry,id:`${manualPath}::${Number(file.size||0)}::${Number(file.lastModified||0)}`,source:'manual-file',relativePath:manualPath,relativeFolder:`Manual/${section}`,folder:`Manual/${section}`,file}:null;if(!entry)return;state.libraryFiles.push(file);state.libraryCatalog=[...(state.libraryCatalog||[]).filter(item=>item.relativePath!==entry.relativePath),entry];state.librarySelections[section]=entry.relativePath;updateFuneralLiturgicalTitleFromCandidate(section,entry);state.manualLiturgicalQueries=state.manualLiturgicalQueries||{psalm:'',gospel:''};state.manualLiturgicalQueries[section]='';delete state.libraryPageRanges[section];state.assemblyStatus='idle';state.assemblyMessage='';persist();if(state.libraryCatalog)rebuildLibraryManifest();rerender();
+  }));
+}
+
 function bindMassEngine(){
   const select=document.getElementById('massSettingSelect');
   if(select)select.addEventListener('change',()=>{
@@ -8890,7 +8959,7 @@ function result(){
   const c=state.celebration,e=uiIsSpanish(),src=sourceFor(),sg=suggestionsFor();
   const timeCard=state.celebrationType==='funeral'&&state.funeralTime?`<div><strong>${e?'Hora (24 h)':'Time (24-hour)'}</strong><br>${esc(state.funeralTime)}</div>`:'';
   const seasonCard=state.celebrationType==='funeral'?'':`<div><strong>${e?'Tiempo litúrgico':'Liturgical season'}</strong><br>${esc(c.season)}</div>`;
-  app.innerHTML=`<section class="card">${connectionDashboard(e)}<span class="badge">${esc(c.id)}</span><h2 style="margin-top:14px">${esc(c.celebration)}</h2><div class="summary"><div><strong>${e?'Fecha':'Date'}</strong><br>${fmt(c.date,state.language)}</div>${timeCard}<div><strong>${e?'Parroquia':'Parish'}</strong><br>${esc(state.parish)}</div><div><strong>${e?'Idioma':'Language'}</strong><br>${esc(languageDisplayName())}</div>${seasonCard}<div><strong>${e?'Ciclo':'Cycle'}</strong><br>${esc(c.cycle)}</div><div><strong>${e?'Color':'Color'}</strong><br>${esc(c.color)}</div><div><strong>Gloria</strong><br>${c.gloria?'Sí / Yes':'No'}</div></div>${sourceCards(src,e)}${suggestionSections(sg,e)}${selectedSummary(e)}${massEngine(e)}<div class="button-row"><button class="secondary" id="changeBtn">← ${e?'Cambiar datos':'Change data'}</button><button id="indexBtn">${e?'Continuar a partituras':'Continue to score matching'}</button></div></section>`;
+  app.innerHTML=`<section class="card">${connectionDashboard(e)}<span class="badge">${esc(c.id)}</span><h2 style="margin-top:14px">${esc(c.celebration)}</h2><div class="summary"><div><strong>${e?'Fecha':'Date'}</strong><br>${fmt(c.date,state.language)}</div>${timeCard}<div><strong>${e?'Parroquia':'Parish'}</strong><br>${esc(state.parish)}</div><div><strong>${e?'Idioma':'Language'}</strong><br>${esc(languageDisplayName())}</div>${seasonCard}<div><strong>${e?'Ciclo':'Cycle'}</strong><br>${esc(c.cycle)}</div><div><strong>${e?'Color':'Color'}</strong><br>${esc(c.color)}</div><div><strong>Gloria</strong><br>${c.gloria?'Sí / Yes':'No'}</div></div>${suggestionSections(sg,e)}${massEngine(e)}<div class="button-row"><button class="secondary" id="changeBtn">← ${e?'Cambiar datos':'Change data'}</button><button id="indexBtn">${e?'Continuar a partituras':'Continue to score matching'}</button></div></section>`;
   document.getElementById('changeBtn').addEventListener('click',renderForm);
   document.getElementById('indexBtn').addEventListener('click',generateIndex);
   bindSuggestions();bindMassEngine();bindConnectionDashboard('result');
@@ -9472,10 +9541,11 @@ function libraryWorkspace(e,options={}){
         ? memorialChoiceMarkup(entry,e,selected,selectedCandidate,labels)
         : (uniqueMarkup||`<select class="library-match-select" data-section="${entry.key}"><option value="">${entry.candidates.length?(e?`${entry.candidates.length} versiones encontradas — elige una`:`${entry.candidates.length} versions found — choose one`):labels.none}</option>${candidateOptions}</select><div class="match-hint">${selectedCandidate?esc(selectedCandidate.relativePath):(entry.candidates.length?(e?`${entry.candidates.length} coincidencias encontradas; ScoreBank no adivinará entre versiones ambiguas.`:`${entry.candidates.length} matches found; ScoreBank will not guess between ambiguous versions.`):labels.missing)}</div>${selectedCandidate?`<button type="button" class="preview-pdf-btn" data-section="${entry.key}">${previewLabel}</button>`:''}<label class="manual-pdf-label">${labels.manual}<input class="library-manual-file" data-section="${entry.key}" type="file" accept="application/pdf,.pdf"></label>`);
       const isLiturgicalChoice=['psalm','gospel'].includes(entry.key);
-      const manualAlternativeButton=isLiturgicalChoice&&!independentPsalmAcclamationMode()?`<button type="button" class="ghost liturgical-manual-override-btn" data-section="${entry.key}">${entry.key==='psalm'?(e?'Buscar / usar otro Salmo o canto':'Search / use another Psalm or song'):(e?'Buscar / usar otro Aleluya':'Search / use another Alleluia')}</button>`:'';
+      const manualLiturgicalCompact=isLiturgicalChoice&&manualPsalmAcclamationChoice(entry.key)
+        ? `<div class="${selectedCandidate?'success':'notice'} liturgical-match-summary"><strong>${entry.key==='psalm'?(e?'Salmo definido en la selección musical':'Psalm defined in music selection'):(e?'Aclamación definida en la selección musical':'Acclamation defined in music selection')}</strong>${state.index?.[entry.key]?`<br>${esc(state.index[entry.key])}`:''}${selectedCandidate?`<br><small>${esc(selectedCandidate.relativePath)}</small>`:`<br><small>${e?'Selecciona la partitura arriba antes de crear el PDF.':'Select the score above before creating the PDF.'}</small>`}</div>${selectedCandidate?`<button type="button" class="preview-pdf-btn" data-section="${entry.key}">${previewLabel}</button>`:''}`:'';
       const selectorMarkup=isLiturgicalChoice&&manualPsalmAcclamationChoice(entry.key)
-        ? funeralLiturgicalPanel(entry,e,labels)
-        : `${automaticSelectorMarkup}${manualAlternativeButton}`;
+        ? manualLiturgicalCompact
+        : automaticSelectorMarkup;
       const extraMarkup=additionalVersionsMarkup(entry,e,selected,visibleCandidates);
       return `<div class="library-match-row ${selected?'matched':'unmatched'} ${requiresPage?'page-required':''}"><div class="library-match-title"><strong>${esc(entry.label)}${paired?` <small>· ${labels.linked}</small>`:''}${compiled?` <small>· ${e?'Compilado':'Compiled'}</small>`:''}</strong><span>${esc(entry.title)}</span></div><div>${selectorMarkup}${extraMarkup}</div><div><label>${labels.pages}${requiresPage?' *':''}</label><input class="library-page-range" data-section="${entry.key}" value="${esc(pageValue)}" placeholder="${placeholder}"><div class="match-hint ${requiresPage?'page-warning':''}">${hint}</div></div></div>`;
     }).join('');
@@ -9505,7 +9575,7 @@ function libraryWorkspace(e,options={}){
     ? `<div class="success library-session-summary"><strong>${e?'Biblioteca lista':'Library ready'}:</strong> ${folderSummary}${roleSummary?`<br><small>${roleSummary}</small>`:''}<br><small>${labels.privacy}</small></div>`
     : `<div class="notice library-session-summary"><strong>${e?'Biblioteca necesaria':'Library required'}:</strong> ${e?'Conecta o actualiza ScoreBank LIBRARY en “Conexiones de biblioteca” al inicio de esta página.':'Connect or refresh ScoreBank LIBRARY in “Library connections” at the top of this page.'}</div>`;
   const planningHeading=independentPsalmAcclamationMode()?(e?'Selección de cantos para Funeral':'Funeral song selection'):(weddingMode()?(e?'Selección de cantos para Boda':'Wedding song selection'):(e?'Selección de cantos LCP/TLP':'LCP/TLP song selection'));
-  const planningHelp=independentPsalmAcclamationMode()?(e?'Entrada, Ofrendas, Comunión, Meditación y Salida son elecciones libres del organizador/familia.':'Entrance, Gifts, Communion, Meditation, and Sending Forth are free director/family choices.'):(weddingMode()?(e?'En Boda puedes elegir Entrada, Ofrendas, Comunión, Meditación, Canto a María y Salida. El Canto a María aparece después de la Meditación.':'For a Wedding you can choose Entrance, Gifts, Communion, Meditation, Marian Song, and Sending Forth. The Marian Song appears after Meditation.'):(e?'Elige aquí Entrada, Ofertorio, Comunión y Salida. Estas opciones aparecen inmediatamente después de las fuentes detectadas.':'Choose Entrance, Preparation of the Gifts, Communion, and Sending Forth here. These options appear immediately after the detected sources.'));
+  const planningHelp=independentPsalmAcclamationMode()?(e?'Entrada, Salmo, Aclamación del Evangelio, Ofrendas, Comunión, Meditación y Salida siguen el orden de la celebración. Las elecciones pueden adaptarse a lo solicitado por la familia.':'Entrance, Psalm, Gospel Acclamation, Gifts, Communion, Meditation, and Sending Forth follow the celebration order. Choices may be adapted to the family’s request.'):(weddingMode()?(e?'En Boda el flujo sigue: Entrada, Salmo, Aclamación, Ofrendas, Comunión, Meditación, Canto a María opcional y Salida.':'For a Wedding the flow is: Entrance, Psalm, Acclamation, Gifts, Communion, Meditation, optional Marian Song, and Sending Forth.'):(e?'Elige la música en el orden de la misa: Entrada, Salmo, Aclamación del Evangelio, Ofertorio, Comunión, Meditación y Salida.':'Choose music in Mass order: Entrance, Psalm, Gospel Acclamation, Gifts, Communion, Meditation, and Sending Forth.'));
   return `<section class="library-workspace"><div class="library-workspace-head"><div><h3>${labels.title}</h3><p>${labels.intro}</p></div>${total?`<span class="badge">${total} PDF</span>`:''}</div>${pairMarkup}${bundleMarkup}${compactLibraryStatus}${liturgicalSourceStatus(e)}<div class="library-planning-inline"><h4>${planningHeading}</h4><p class="match-hint">${planningHelp}</p>${suggestionSections(suggestionsFor(),e)}</div>${manifest?`<div class="library-match-list">${rows}</div>`:''}${pageStatus}${blockerMarkup}${status}<div class="button-row"><button class="secondary" id="matchLibraryBtn" ${total?'':'disabled'}>${labels.match}</button>${allowAssembly?`<button id="assembleBookBtn" ${ready?'':'disabled'}>${state.assemblyStatus==='working'?labels.working:labels.build}</button>`:''}</div></section>`;
 }
 function bindLibraryWorkspace(){
@@ -9566,35 +9636,19 @@ function bindLibraryWorkspace(){
   }));
 
   document.querySelectorAll('.funeral-liturgical-index-text').forEach(input=>{
-    const liveSearch=()=>{
+    input.addEventListener('input',()=>{
       const section=input.dataset.section;
       if(!['psalm','gospel'].includes(section))return;
-      const value=String(input.value||'').trim();
-      state.index[section]=value;
-      state.manualLiturgicalQueries=state.manualLiturgicalQueries||{psalm:'',gospel:''};
-      // The director asked to finish typing the Gospel Acclamation name before
-      // ScoreBank offers candidates. Psalm may still search live; Gospel waits
-      // for the explicit search button or Enter key.
-      if(section==='psalm')state.manualLiturgicalQueries[section]=value;
-      else state.manualLiturgicalQueries[section]='';
+      state.index[section]=String(input.value||'');
       state.assemblyStatus='idle';state.assemblyMessage='';
       persist();
-      if(section==='gospel')return;
-      window.clearTimeout(funeralLiturgicalSearchTimers[section]);
-      funeralLiturgicalSearchTimers[section]=window.setTimeout(()=>{
-        indexView();
-        const next=document.querySelector(`.funeral-liturgical-index-text[data-section="${section}"]`);
-        if(next){next.focus();const len=next.value.length;try{next.setSelectionRange(len,len);}catch(_){}}
-      },300);
-    };
-    input.addEventListener('input',liveSearch);
+    });
     input.addEventListener('change',()=>{
       const section=input.dataset.section;
-      window.clearTimeout(funeralLiturgicalSearchTimers[section]);
+      if(!['psalm','gospel'].includes(section))return;
       state.index[section]=String(input.value||'').trim();
-      if(state.libraryCatalog)rebuildLibraryManifest();
-      persist();
-      if(section==='psalm')indexView();
+      state.assemblyStatus='idle';state.assemblyMessage='';
+      if(state.libraryCatalog)rebuildLibraryManifest();else persist();
     });
   });
   document.querySelectorAll('.funeral-psalm-suggestion-select').forEach(select=>select.addEventListener('change',()=>{
