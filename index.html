@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover"><title>ScoreBank v0.10.15 Mobile Beta</title><meta name="theme-color" content="#172033"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="ScoreBank"><style>
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover"><title>ScoreBank v0.10.18 Mobile Beta</title><meta name="theme-color" content="#172033"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="ScoreBank"><style>
 :root{--navy:#172033;--navy2:#24314c;--bg:#f3f5f9;--card:#fff;--text:#182033;--muted:#6b7280;--line:#d8deea;--green:#18794e;--green-soft:#eaf7f0}*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}.topbar{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:22px 18px;box-shadow:0 4px 18px #0003}.topbar>div,.shell{max-width:1040px;margin:auto}.brand{font-size:32px;font-weight:800}.version{margin-top:5px;color:#dce4f2;font-size:14px}.shell{padding:24px 16px 60px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 10px 30px rgba(23,32,51,.07);margin-bottom:18px}.hero{padding:30px}h1,h2{margin-top:0}h1{font-size:clamp(30px,5vw,48px);margin-bottom:10px}h2{font-size:26px}p{line-height:1.55}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.full{grid-column:1/-1}label{display:block;font-weight:700;margin-bottom:7px}input,select{width:100%;padding:13px 14px;border:1px solid #bcc6d6;border-radius:12px;font-size:17px;background:#fff}.button-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}button{border:0;border-radius:12px;padding:13px 18px;font-size:16px;font-weight:750;cursor:pointer;background:var(--green);color:#fff}button.secondary{background:#e9edf4;color:var(--text)}button.ghost{background:transparent;color:var(--navy);border:1px solid var(--line)}.summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}.summary>div{padding:14px;border-radius:13px;background:#f7f8fb;border:1px solid #e4e8f0}.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--green-soft);color:var(--green);font-weight:800;font-size:13px}.notice{padding:14px 16px;border-radius:13px;background:#fff7df;border:1px solid #efd58c;margin:16px 0}.success{padding:14px 16px;border-radius:13px;background:var(--green-soft);border:1px solid #b8dfc8;color:#105c3c;margin:16px 0}.index-list{display:grid;gap:12px}.index-row{display:grid;grid-template-columns:260px 1fr;gap:14px;align-items:center;padding:12px;border:1px solid var(--line);border-radius:14px}.index-row label{margin:0}@media(max-width:720px){.grid,.summary{grid-template-columns:1fr}.index-row{grid-template-columns:1fr}.card{padding:18px}}
 .source-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:20px 0}.source-card{border:1px solid var(--line);border-radius:16px;padding:18px;background:#fbfcfe}.source-title{font-size:12px;font-weight:850;letter-spacing:.08em;color:var(--green);margin-bottom:8px}.source-card h3{margin:0 0 10px}.response{font-size:20px;font-weight:800;line-height:1.35}.source-meta{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:12px;margin-top:14px;color:#667085;font-size:13px}.official-row{background:var(--green-soft);border-color:#b8dfc8}.index-row label small{display:block;color:#667085;font-weight:500;margin-top:4px}.official-row input{background:#fff;color:#12263f;font-weight:650}@media(max-width:720px){.source-grid{grid-template-columns:1fr}}
 /* Build 004 — impresión compacta en una sola hoja US Letter */
@@ -289,7 +289,9 @@ input[type=file]{max-width:100%;overflow:hidden}
 }
 @media(display-mode:standalone){.topbar{padding-top:calc(10px + env(safe-area-inset-top))}}
 
-</style></head><body><header class="topbar"><div><div class="brand">🎼 ScoreBank</div><div class="version">v0.10.15 · Mobile Beta · Build 115</div></div></header><main id="app" class="shell"></main><script>
+.index-celebration-symbol{display:flex;justify-content:center;align-items:center;min-height:58px;margin:2px 0 8px}.index-celebration-symbol svg{display:block;max-width:58px;max-height:58px}
+
+</style></head><body><header class="topbar"><div><div class="brand">🎼 ScoreBank</div><div class="version">v0.10.18 · Mobile Beta · Build 118</div></div></header><main id="app" class="shell"></main><script>
 (function initializeLiturgicalCalendar(global) {
   'use strict';
 
@@ -3612,6 +3614,7 @@ window.ScoreBankMassSettingsData = {
       lamb: 'Cordero de Dios',
       communion: 'Comunión',
       meditation: 'Meditación',
+      marian: 'Canto a María',
       sending: 'Salida / Recesional',
       print: 'Imprimir / Guardar como PDF',
       close: 'Cerrar',
@@ -3640,6 +3643,7 @@ window.ScoreBankMassSettingsData = {
       lamb: 'Cordero de Dios / Lamb of God',
       communion: 'Comunión / Communion',
       meditation: 'Meditación / Meditation',
+      marian: 'Canto a María / Marian Song',
       sending: 'Salida / Sending Forth',
       print: 'Imprimir / Print',
       close: 'Cerrar / Close',
@@ -3668,6 +3672,7 @@ window.ScoreBankMassSettingsData = {
       lamb: 'Lamb of God',
       communion: 'Communion',
       meditation: 'Meditation',
+      marian: 'Marian Song',
       sending: 'Sending Forth / Recessional',
       print: 'Print / Save as PDF',
       close: 'Close',
@@ -3689,6 +3694,7 @@ window.ScoreBankMassSettingsData = {
     'lamb',
     'communion',
     'meditation',
+    'marian',
     'sending'
   ]);
 
@@ -3705,6 +3711,39 @@ window.ScoreBankMassSettingsData = {
     const code=String(value || '').toLowerCase();
     if(code.startsWith('bi'))return 'bi';
     return code.startsWith('en') ? 'en' : 'es';
+  }
+
+
+  function celebrationSymbolKind(celebration = {}) {
+    const type = String(celebration.celebrationType || celebration.type || '').toLowerCase().trim();
+    const title = String(celebration.celebration || celebration.title || '').toLowerCase();
+
+    if (type === 'funeral' || type.startsWith('funeral-') || /\b(funeral|difunt|requiem|misa memorial)\b/.test(title)) {
+      return 'cross';
+    }
+
+    if (type.includes('wedding') || type.includes('anniversary') || /\b(boda|wedding|aniversario de bodas?|wedding anniversary)\b/.test(title)) {
+      return 'rings';
+    }
+
+    return 'church';
+  }
+
+  function renderCelebrationSymbolSvg(kind, options = {}) {
+    const symbol = ['cross', 'rings', 'church'].includes(kind) ? kind : 'church';
+    const size = Number(options.size || 48);
+    const stroke = escapeHtml(options.stroke || '#172033');
+    const common = `width="${size}" height="${size}" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"`;
+
+    if (symbol === 'cross') {
+      return `<svg ${common} data-scorebank-symbol="cross"><path d="M32 9v46M18 25h28" stroke="${stroke}" stroke-width="4" stroke-linecap="round"/></svg>`;
+    }
+
+    if (symbol === 'rings') {
+      return `<svg ${common} data-scorebank-symbol="rings"><circle cx="25" cy="33" r="15" stroke="${stroke}" stroke-width="3"/><circle cx="39" cy="33" r="15" stroke="${stroke}" stroke-width="3"/><path d="M27 16l5-7 5 7" stroke="${stroke}" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+    }
+
+    return `<svg ${common} data-scorebank-symbol="church"><path d="M13 55h38M18 55V31l14-11 14 11v24M26 55V43h12v12M32 20V8M27 13h10M25 31h14" stroke="${stroke}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
   }
 
   function englishOrdinalSuffix(day) {
@@ -3811,10 +3850,13 @@ window.ScoreBankMassSettingsData = {
     const index = input.index || {};
     const hasGloria = celebration.gloria !== false;
     const hasMeditation = celebration.meditation !== false;
+    const isWedding = String(celebration.celebrationType || '').toLowerCase() === 'wedding';
+    const symbolKind = celebrationSymbolKind(celebration);
 
     const sections = BASE_ORDER
       .filter((key) => key !== 'gloria' || hasGloria)
       .filter((key) => key !== 'meditation' || hasMeditation)
+      .filter((key) => key !== 'marian' || isWedding)
       .filter((key) => {
         if (key !== 'ourFather') {
           return true;
@@ -3873,6 +3915,9 @@ window.ScoreBankMassSettingsData = {
       season: String(celebration.season || '').trim(),
       cycle: String(celebration.cycle || '').trim(),
       massSetting: String(index.massSetting || '').trim(),
+      celebrationType: String(celebration.celebrationType || '').trim(),
+      funeralKind: String(celebration.funeralKind || '').trim(),
+      symbolKind,
       sections
     };
   }
@@ -3903,6 +3948,8 @@ window.ScoreBankMassSettingsData = {
     }
 
     const labels = book.labels;
+    const symbolKind = book.symbolKind || celebrationSymbolKind({ celebrationType: book.celebrationType, celebration: book.celebrationTitle });
+    const celebrationSymbol = renderCelebrationSymbolSvg(symbolKind, { size: 46 });
 
     const sectionRows = book.sections.map((section) => {
       const psalmTitle = section.key === 'psalm' && section.liturgicalResponse
@@ -3935,6 +3982,8 @@ window.ScoreBankMassSettingsData = {
     .print-button { background: #18794e; color: #fff; }
     .close-button { background: #e7ebf1; color: #172033; }
     .sheet { width: min(8.5in, calc(100% - 24px)); min-height: 11in; margin: 24px auto; padding: 0.48in 0.55in; background: #fff; box-shadow: 0 12px 38px rgba(23, 32, 51, .16); }
+    .celebration-symbol { display: flex; justify-content: center; align-items: center; min-height: 48px; margin: 0 0 7px; }
+    .celebration-symbol svg { display: block; }
     .document-kicker { margin-bottom: 8px; font-size: 11px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; color: #18794e; text-align: center; }
     h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 25px; line-height: 1.12; text-align: center; }
     .date { margin-top: 7px; font-size: 14px; text-align: center; }
@@ -3969,6 +4018,7 @@ window.ScoreBankMassSettingsData = {
     <button class="close-button" type="button" onclick="window.close()">${escapeHtml(labels.close)}</button>
   </div>
   <main class="sheet">
+    <div class="celebration-symbol" data-symbol="${escapeHtml(symbolKind)}">${celebrationSymbol}</div>
     <h1>${escapeHtml(book.celebrationTitle || labels.celebration)}</h1>
     <div class="date">${escapeHtml(book.formattedDate)}</div>
     ${book.time ? `<div class="date"><strong>${escapeHtml(labels.time || 'Time')}:</strong> ${escapeHtml(book.time)}</div>` : ''}
@@ -4015,6 +4065,8 @@ window.ScoreBankMassSettingsData = {
     BASE_ORDER,
     escapeHtml,
     normalizeLanguage,
+    celebrationSymbolKind,
+    renderCelebrationSymbolSvg,
     formatDate,
     normalizeSelection,
     cleanIndexDisplayTitle,
@@ -4180,7 +4232,7 @@ window.ScoreBankMassSettingsData = {
 
   const MASS_SECTION_KEYS = new Set(['kyrie','gloria','massSetting','holy','memorial','amen','lamb']);
   const PSALM_SECTION_KEYS = new Set(['psalm','gospel']);
-  const MUSIC_SECTION_KEYS = new Set(['entrance','gifts','ourFather','communion','meditation','sending']);
+  const MUSIC_SECTION_KEYS = new Set(['entrance','gifts','ourFather','communion','meditation','marian','sending']);
 
   function catalogForSection(sectionKey, catalog, massCatalog) {
     const main = Array.from(catalog || []);
@@ -4313,7 +4365,7 @@ window.ScoreBankMassSettingsData = {
   }
 
   function planningSongIdentity(query, sectionKey = '') {
-    const planningKeys = new Set(['entrance','gifts','communion','meditation','sending']);
+    const planningKeys = new Set(['entrance','gifts','communion','meditation','marian','sending']);
     if (!planningKeys.has(String(sectionKey || ''))) return null;
     const raw = String(query || '').replace(/\s+/g, ' ').trim();
     const match = raw.match(/^(.*?)\s*\(([^()]{2,80})\)\s*$/);
@@ -6880,6 +6932,49 @@ window.ScoreBankMassSettingsData = {
     });
   }
 
+
+  function resolveCelebrationSymbolKind(book = {}) {
+    const explicit = String(book.symbolKind || '').toLowerCase();
+    if (['cross', 'rings', 'church'].includes(explicit)) return explicit;
+    const type = String(book.celebrationType || '').toLowerCase();
+    const title = String(book.celebrationTitle || '').toLowerCase();
+    if (type === 'funeral' || type.startsWith('funeral-') || /\b(funeral|difunt|requiem|misa memorial)\b/.test(title)) return 'cross';
+    if (type.includes('wedding') || type.includes('anniversary') || /\b(boda|wedding|aniversario de bodas?|wedding anniversary)\b/.test(title)) return 'rings';
+    return 'church';
+  }
+
+  function drawCelebrationSymbol(page, book, PDFLib, pageWidth = 612) {
+    const { rgb } = PDFLib;
+    const color = rgb(0.09, 0.125, 0.2);
+    const kind = resolveCelebrationSymbolKind(book);
+    const cx = pageWidth / 2;
+    const cy = 758;
+    const line = (x1, y1, x2, y2, thickness = 1.8) => page.drawLine({ start: { x: x1, y: y1 }, end: { x: x2, y: y2 }, thickness, color });
+
+    if (kind === 'cross') {
+      line(cx, cy - 17, cx, cy + 17, 2.4);
+      line(cx - 10, cy + 7, cx + 10, cy + 7, 2.4);
+      return kind;
+    }
+
+    if (kind === 'rings') {
+      page.drawCircle({ x: cx - 6.5, y: cy, size: 9.5, borderColor: color, borderWidth: 1.8 });
+      page.drawCircle({ x: cx + 6.5, y: cy, size: 9.5, borderColor: color, borderWidth: 1.8 });
+      line(cx - 3, cy + 11, cx, cy + 16, 1.4);
+      line(cx, cy + 16, cx + 3, cy + 11, 1.4);
+      return kind;
+    }
+
+    // Classic church: nave, roof, central tower/cross, and doorway.
+    page.drawRectangle({ x: cx - 14, y: cy - 13, width: 28, height: 19, borderColor: color, borderWidth: 1.6 });
+    line(cx - 16, cy + 6, cx, cy + 18, 1.6);
+    line(cx, cy + 18, cx + 16, cy + 6, 1.6);
+    page.drawRectangle({ x: cx - 4, y: cy - 13, width: 8, height: 10, borderColor: color, borderWidth: 1.4 });
+    line(cx, cy + 18, cx, cy + 27, 1.5);
+    line(cx - 4, cy + 23, cx + 4, cy + 23, 1.5);
+    return kind;
+  }
+
   function cleanIndexDisplayTitle(value) {
     let text = toPdfText(value).replace(/\s+/g, ' ').trim();
     if (!text) return '';
@@ -6991,6 +7086,7 @@ window.ScoreBankMassSettingsData = {
       const gray = rgb(0.38, 0.42, 0.49);
       const light = rgb(0.94, 0.95, 0.97);
 
+      drawCelebrationSymbol(page, book, PDFLib, pageWidth);
       page.drawRectangle({ x: margin, y: 728, width: pageWidth - (margin * 2), height: 2, color: green });
 
       const titleLines = wrapText(book.celebrationTitle || book.labels?.celebration || 'Celebration', titleFont, 22, pageWidth - (margin * 2));
@@ -7310,6 +7406,8 @@ window.ScoreBankMassSettingsData = {
     wrapText,
     toPdfText,
     cleanIndexDisplayTitle,
+    resolveCelebrationSymbolKind,
+    drawCelebrationSymbol,
     createIndexRowLayout,
     buildIndexCoverRows,
     assembleMassBookPdf,
@@ -7335,6 +7433,7 @@ const englishOrdinalSuffix=day=>{const n=Number(day)||0;const mod100=n%100;if(mo
 const fmt=(v,l)=>{const date=new Date(v+'T12:00:00');if(l==='en'){const month=new Intl.DateTimeFormat('en-US',{month:'long'}).format(date);const day=date.getDate();return `${month} ${day}${englishOrdinalSuffix(day)}, ${date.getFullYear()}`;}return new Intl.DateTimeFormat('es-US',{year:'numeric',month:'long',day:'numeric'}).format(date);};
 const sourceFor=()=>window.ScoreBankCelebrationSourceResolver?.resolve?.({sourceData:window.ScoreBankSourceData,calendar:window.ScoreBankLiturgicalCalendar,date:state.date,language:state.language,celebration:state.celebration?.celebration||state.celebrationTitle,celebrationType:state.celebrationType,cycle:state.celebration?.cycle})||window.ScoreBankSourceData?.[state.date]?.[state.language]||null;
 const independentPsalmAcclamationMode=()=>state.celebrationType==='funeral';
+const weddingMode=()=>state.celebrationType==='wedding';
 const liturgicalManualOverride=section=>['psalm','gospel'].includes(section)&&Boolean(state.manualLiturgicalOverrides?.[section]);
 const manualPsalmAcclamationChoice=section=>independentPsalmAcclamationMode()||liturgicalManualOverride(section);
 const anyManualPsalmAcclamationOverride=()=>liturgicalManualOverride('psalm')||liturgicalManualOverride('gospel');
@@ -7365,7 +7464,7 @@ const funeralTimeOptionMarkup=(value,e)=>`<option value="">${e?'Seleccionar hora
 const validFuneralTimeOption=value=>FUNERAL_TIME_OPTIONS.includes(String(value||'').trim());
 const funeralLiturgicalSearchTimers={};
 // Previous planning cache markers: 101-funeral-director-workflow-v1 · 102-funeral-live-choice-v1 · 103-funeral-choice-collapse-v1
-const PLANNING_CACHE_VERSION='110-st-agustine-manual-psalm-v1';
+const PLANNING_CACHE_VERSION='117-marian-library-suggestions-v1';
 function planningContextSignature(){const c=state.celebration?.celebration||state.celebrationTitle||'';return [PLANNING_CACHE_VERSION,state.language,state.date,state.celebration?.cycle||'',state.celebrationType||'',String(c).toLowerCase().replace(/\s+/g,' ').trim()].join('|');}
 function funeralPlanningDate(){const year=Number(String(state.date||'').slice(0,4))||new Date().getFullYear();return `${year}-11-02`;}
 function funeralPlanningCycle(){const date=funeralPlanningDate();const civil=new Date(`${date}T12:00:00Z`);return window.ScoreBankLiturgicalCalendar?.cycleForDate?.(civil)||state.celebration?.cycle||'';}
@@ -7910,7 +8009,7 @@ function enforcePreparationContext(){
   return true;
 }
 function persist(){const safe={...state,compiledMassSettingFile:null,massFolderFiles:[],massFolderCatalog:[],libraryFiles:[],libraryCatalog:null,libraryManifest:null,celebrationModel:state.celebrationModel?.toPlainObject?.()||null};localStorage.setItem('scorebank-v070-build007',JSON.stringify(safe));}
-function welcome(){app.innerHTML=`<section class="card hero"><span class="badge">BUILD 115 · SELECCIÓN MANUAL CORREGIDA</span><h1>Weekly Mass Book</h1><p>La celebración es ahora la clave litúrgica principal; la fecha ayuda a identificar, validar y organizar la misa.</p><div class="success"><strong>Nuevo:</strong> Funeral distingue Memorial, Cuerpo Presente y Cenizas; conserva el Mass Setting anterior y mejora Salmo, Aleluya e INDEX.</div><div class="button-row"><button id="startBtn">Preparar celebración</button></div></section>`;document.getElementById('startBtn').addEventListener('click',renderForm);}
+function welcome(){app.innerHTML=`<section class="card hero"><span class="badge">BUILD 118 · IDENTIDAD VISUAL DEL INDEX</span><h1>Weekly Mass Book</h1><p>La celebración es ahora la clave litúrgica principal; la fecha ayuda a identificar, validar y organizar la misa.</p><div class="success"><strong>Nuevo:</strong> El INDEX identifica automáticamente la celebración: cruz para difuntos, anillos entrelazados para bodas/aniversarios e iglesia clásica para las demás celebraciones.</div><div class="button-row"><button id="startBtn">Preparar celebración</button></div></section>`;document.getElementById('startBtn').addEventListener('click',renderForm);}
 function renderForm(){
   const e=uiIsSpanish();
   const suggested=window.ScoreBankLiturgicalCalendar?.identify?.(state.date,calendarLanguage());
@@ -8197,6 +8296,115 @@ function updateFuneralLiturgicalTitleFromCandidate(section,candidate){
     if(text&&!new RegExp(`\\(${escapedAuthor}\\)\\s*$`,'i').test(text))state.index.psalm=`${text} (${author})`;
   }
 }
+
+const MARIAN_CURATED_TITLES=[
+  'Ave María — Franz Schubert',
+  'Ave Maria (Schubert)',
+  'Ave Maria (E. Cortés)',
+  'Ave María (J. Cortez)',
+  'Ave Maria (Farrell)',
+  'Dios Te Salve, María (J. Sosa)',
+  'Hail Mary: Gentle Woman (Carey Landry)',
+  'Salve Regina',
+  'Salve, Regina, Señora y Madre de Piedad',
+  'Salve, Reina de los Cielos (Rubalcava)',
+  'Hail, Holy Queen',
+  'Santa María del Camino (Espinosa)',
+  'Virgen Mambisa (O. Rodríguez)',
+  'Plegaria a la Virgen de la Caridad (Vitier)',
+  'Plegaria a la Virgen de la Caridad (Lecuona)',
+  'O Sanctissima',
+  'Immaculate Mary',
+  'Mary, Sing with Joyful Heart (Steve Angrisano)',
+  'La Elegida (E. Cortés)',
+  'Magnificat (Rubalcava)',
+  'Magnificat (Farrell)',
+  'Magnificat (Coppo)',
+  'Mi Alma Glorifica al Señor (Magnificat)',
+  'Canto de María (Mejía)',
+  'Canto de María (Luna)',
+  'María, Oh Dulce Virgen',
+  'María: Dulce Madre (Landry)',
+  'Madre Sencilla y Humilde',
+  'Como Tú, María',
+  'Como Estrella en Claro Cielo',
+  'El Ángelus',
+  'La Virgen Sueña Caminos',
+  'María Era Su Nombre',
+  '¿No Estoy Yo Aquí?',
+  'Estrella de los Mares',
+  'Del Cielo Ha Bajado',
+  'Dios Te Salve, Luna Hermosa',
+  'Virgencita, Dulce Madre',
+  'Virgencita Ranchera',
+  'Adiós, Reina del Cielo',
+  'Adiós, Oh Virgen de Guadalupe',
+  'My Soul Rejoices (François)',
+  'Let It Be Done to Us (B. Hurd)'
+];
+function marianLibraryCandidate(candidate){
+  const resolver=window.ScoreBankLibraryMatchResolver;
+  const normalize=resolver?.normalizeText||((v)=>String(v||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''));
+  const hay=normalize(`${candidate?.title||''} ${candidate?.filename||''} ${candidate?.relativePath||''}`);
+  if(!hay)return false;
+  const phrases=[
+    'ave maria','hail mary','salve regina','la salve','salve reina','hail holy queen',
+    'santa maria','virgen','virgencita','our lady','madre de dios','mother of god',
+    'magnificat','canto de maria','dios te salve','angelus','o sanctissima',
+    'plegaria a la virgen','estrella de los mares','la elegida','immaculate mary',
+    'mary sing with joyful heart','la virgen suena caminos','maria oh dulce virgen',
+    'maria dulce madre','madre sencilla y humilde','como tu maria','marian'
+  ];
+  if(phrases.some(term=>hay.includes(term)))return true;
+  return /\b(?:maria|mary|virgen|madonna)\b/.test(hay);
+}
+function marianLibraryOptions(){
+  const resolver=window.ScoreBankLibraryMatchResolver;
+  const normalize=resolver?.normalizeText||((v)=>String(v||'').toLowerCase());
+  const rows=manualSongLooseCatalog().filter(marianLibraryCandidate).map(candidate=>({
+    title:candidateDisplayTitle(candidate),
+    path:String(candidate.relativePath||''),
+    candidate
+  })).filter(row=>row.title&&row.path);
+  const priority=(row)=>{
+    const n=normalize(`${row.title} ${row.path}`);
+    if(n.includes('ave maria')&&n.includes('schubert'))return 0;
+    if(n.includes('ave maria')||n.includes('hail mary'))return 1;
+    if(n.includes('salve')||n.includes('hail holy queen'))return 2;
+    return 3;
+  };
+  rows.sort((a,b)=>priority(a)-priority(b)||a.title.localeCompare(b.title,undefined,{sensitivity:'base'})||a.path.localeCompare(b.path));
+  const seen=new Set();
+  return rows.filter(row=>{const key=normalize(row.path);if(seen.has(key))return false;seen.add(key);return true;}).slice(0,80);
+}
+function marianSuggestionPanel(e){
+  if(!weddingMode())return '';
+  const resolver=window.ScoreBankLibraryMatchResolver;
+  const normalize=resolver?.normalizeText||((v)=>String(v||'').toLowerCase());
+  const live=marianLibraryOptions();
+  const liveTitleKeys=new Set(live.map(row=>normalize(row.title)));
+  const curated=MARIAN_CURATED_TITLES.filter(title=>!liveTitleKeys.has(normalize(title)));
+  const liveOptions=live.map(row=>`<option value="${esc(row.title)}" data-path="${esc(row.path)}">${esc(row.title)}${row.path?` — ${esc(row.path.split('/').pop())}`:''}</option>`).join('');
+  const curatedOptions=curated.map(title=>`<option value="${esc(title)}">${esc(title)}</option>`).join('');
+  const connected=Array.isArray(state.libraryCatalog)&&state.libraryCatalog.length;
+  const hint=e
+    ?(connected
+      ?`ScoreBank detectó ${live.length} partitura(s) mariana(s) suelta(s) en la biblioteca conectada. Los Ave María de Schubert aparecen primero y se conservan como versiones separadas por tonalidad/archivo. Debajo también puedes buscar títulos marianos presentes en tus libros.`
+      :`Conecta ScoreBank LIBRARY para que aparezcan automáticamente todas las versiones y tonalidades disponibles. Mientras tanto puedes escoger un título mariano de referencia y ScoreBank lo buscará en la biblioteca y Ebooks.`)
+    :(connected
+      ?`ScoreBank detected ${live.length} loose Marian score(s) in the connected library. Schubert Ave Maria versions appear first and remain separate by key/file. You can also search Marian titles found in your hymnals.`
+      :`Connect ScoreBank LIBRARY to show every available version and key automatically. Meanwhile you may choose a Marian reference title and ScoreBank will search the library and Ebooks.`);
+  return `<div class="marian-library-panel">
+    <label>${e?'Cantos a María de mi biblioteca':'Marian songs from my library'}</label>
+    <p class="match-hint">${hint}</p>
+    <select class="marian-library-select">
+      <option value="">${e?'Seleccionar canto a María…':'Select a Marian song…'}</option>
+      ${liveOptions?`<optgroup label="${e?'Partituras detectadas en ScoreBank Library':'Scores detected in ScoreBank Library'}">${liveOptions}</optgroup>`:''}
+      ${curatedOptions?`<optgroup label="${e?'Ave María, Salve y otros títulos marianos encontrados':'Ave Maria, Salve and other Marian titles found'}">${curatedOptions}</optgroup>`:''}
+    </select>
+  </div>`;
+}
+
 function manualSongPanel(moment,e){
   const funeral=independentPsalmAcclamationMode();
   const query=String(state.manualSongQueries?.[moment]||'').trim();
@@ -8313,7 +8521,9 @@ function suggestionSections(data,e){
   const meditationOptions=meditationSuggestions.map(title=>`<option value="${esc(title)}" ${title===meditationValue?'selected':''}>${esc(title)}</option>`).join('');
   const matchMarkup=meditationMatches.length?`<div class="meditation-search-results"><strong>${e?'Coincidencias en ScoreBank Library':'Matches in ScoreBank Library'}:</strong>${meditationMatches.map(match=>{const {title}=manualSongResultItem(match);return `<button type="button" class="meditation-match-btn" data-title="${esc(title)}">${esc(title)} · ${Math.round(Number(match.score||0)*100)}%</button>`;}).join('')}</div>`:'';
   const meditation=`<section class="suggestion-section meditation-section" data-moment="meditation"><div class="suggestion-head"><h3>${meditationLabel}</h3><small>${e?'Opcional · biblioteca privada':'Optional · private library'}</small></div>${meditationSuggestions.length?`<select id="planningMeditationSelect"><option value="">${e?'Sugerencias de meditación…':'Meditation suggestions…'}</option>${meditationOptions}</select>`:''}${meditationValue?`<div class="suggestion-picked"><strong>${e?'Seleccionado':'Selected'}:</strong> ${esc(meditationValue)}</div>`:''}${manualSongPanel('meditation',e)}</section>`;
-  return sectionMarkup('entrance',labels.entrance)+sectionMarkup('gifts',labels.gifts)+sectionMarkup('communion',labels.communion)+meditation+sectionMarkup('sending',labels.sending);
+  const marianValue=state.index.marian||'';
+  const marian=weddingMode()?`<section class="suggestion-section wedding-marian-section" data-moment="marian"><div class="suggestion-head"><h3>${e?'Canto a María':'Marian Song'}</h3><small>${e?'Boda · después de la Meditación · opcional':'Wedding · after Meditation · optional'}</small></div>${marianValue?`<div class="suggestion-picked"><strong>${e?'Seleccionado':'Selected'}:</strong> ${esc(marianValue)}</div>`:''}${marianSuggestionPanel(e)}${manualSongPanel('marian',e)}</section>`:'';
+  return sectionMarkup('entrance',labels.entrance)+sectionMarkup('gifts',labels.gifts)+sectionMarkup('communion',labels.communion)+meditation+marian+sectionMarkup('sending',labels.sending);
 }
 
 function folderMatches(setting){if(!setting||!state.massFolderFiles.length)return [];const needles=[setting.name,...(setting.aliases||[])].map(x=>x.toLowerCase().replace(/[^a-z0-9áéíóúüñ]+/g,' '));return state.massFolderFiles.filter(f=>{const n=f.toLowerCase().replace(/[^a-z0-9áéíóúüñ]+/g,' ');return needles.some(q=>n.includes(q));});}
@@ -8466,6 +8676,19 @@ function bindSuggestions(renderTarget='result'){
     persist();
     if(renderTarget==='index')indexView();else result();
   };
+  const marianSelect=document.querySelector?.('.marian-library-select');
+  if(marianSelect)marianSelect.addEventListener('change',async()=>{
+    const option=marianSelect.selectedOptions?.[0];
+    const title=String(marianSelect.value||'').trim();
+    const path=String(option?.dataset?.path||'').trim();
+    if(!title)return;
+    if(path){
+      applyManualSongTitle('marian',title,path);
+      return;
+    }
+    state.index.marian=title;
+    await runManualSongSearch('marian',title);
+  });
   document.querySelectorAll('.manual-song-search-btn').forEach(btn=>btn.addEventListener('click',()=>{
     const moment=btn.dataset.moment;
     const input=document.querySelector(`.manual-song-query[data-moment="${moment}"]`);
@@ -8660,7 +8883,7 @@ function bindConnectionDashboard(target='result'){
   const mass=document.getElementById('massFolderInputTop');
   if(mass)mass.addEventListener('change',()=>applyMassFolderFiles(mass.files,target));
 }
-function selectedSummary(e){const pairs=e?[['Entrada','entrance'],['Salmo','psalm'],['Aclamación del Evangelio','gospel'],['Ofertorio','gifts'],['Comunión','communion'],['Meditación','meditation'],['Salida','sending']]:[['Entrance','entrance'],['Responsorial Psalm','psalm'],['Gospel Acclamation','gospel'],['Gifts','gifts'],['Communion','communion'],['Meditation','meditation'],['Sending Forth','sending']];return `<div class="selection-summary"><strong>${e?'Selección actual':'Current selection'}</strong>${pairs.map(([l,k])=>`${l}: ${esc(state.index[k]||'—')}`).join('<br>')}</div>`;}
+function selectedSummary(e){const pairs=e?[['Entrada','entrance'],['Salmo','psalm'],['Aclamación del Evangelio','gospel'],['Ofertorio','gifts'],['Comunión','communion'],['Meditación','meditation']]:[['Entrance','entrance'],['Responsorial Psalm','psalm'],['Gospel Acclamation','gospel'],['Gifts','gifts'],['Communion','communion'],['Meditation','meditation']];if(weddingMode())pairs.push([e?'Canto a María':'Marian Song','marian']);pairs.push([e?'Salida':'Sending Forth','sending']);return `<div class="selection-summary"><strong>${e?'Selección actual':'Current selection'}</strong>${pairs.map(([l,k])=>`${l}: ${esc(state.index[k]||'—')}`).join('<br>')}</div>`;}
 function renderSearchPanel(){const controller=window.ScoreBankSearchUi?.createSearchController?.();const isSpanish=uiIsSpanish();const catalog=Array.isArray(state.libraryCatalog)?state.libraryCatalog:null;const query=state.searchQuery||'';const results=controller?.searchCatalog?.(query,catalog)||[];let searchResults='';if(!state.libraryStats){searchResults=`<div class="search-empty">${isSpanish?'Conecta ScoreBank LIBRARY para escanear la biblioteca y ver estadísticas.':'Connect ScoreBank LIBRARY to scan the library and view statistics.'}</div>`;}else if(results.length){searchResults=results.map(item=>`<article class="search-result"><strong>${esc(item.normalizedTitle||'Untitled')}</strong><div class="search-meta">${esc((item.fileTypes||[]).join(', ')||'—')}</div><div class="search-meta">${isSpanish?'Archivos':'Files'}: ${item.relatedFiles ?? 0} · ${esc(item.relativeFolder||'—')}</div></article>`).join('');}else{searchResults=`<div class="search-empty">${isSpanish?'No se encontraron coincidencias.':'No matches found.'}</div>`;}const statsMarkup=state.libraryStats?`<div class="search-stats"><div><strong>${state.libraryStats.totalFiles}</strong><span>${isSpanish?'archivos':'files'}</span></div><div><strong>${state.libraryStats.totalGroupedWorks}</strong><span>${isSpanish?'obras':'works'}</span></div><div><strong>${state.libraryStats.scanDurationMs} ms</strong><span>${isSpanish?'escaneo':'scan'}</span></div></div>`:'';return `<section class="search-panel"><h3>${isSpanish?'Búsqueda rápida':'Quick search'}</h3><p>${isSpanish?'Busca trabajos musicales en el catálogo cargado en memoria.':'Search musical works in the in-memory catalog.'}</p>${statsMarkup}<input id="searchInput" class="search-input" value="${esc(query)}" placeholder="${isSpanish?'Buscar por título o carpeta':'Search by title or folder'}"><div class="search-results">${searchResults}</div></section>`;}
 function result(){
   syncOfficialFields();
@@ -8672,6 +8895,14 @@ function result(){
   document.getElementById('indexBtn').addEventListener('click',generateIndex);
   bindSuggestions();bindMassEngine();bindConnectionDashboard('result');
 }
+
+function indexCelebrationSymbolMarkup(){
+  const renderer=window.ScoreBankMassBookRenderer;
+  const kind=renderer?.celebrationSymbolKind?.(state.celebration||{celebrationType:state.celebrationType,celebration:state.celebrationTitle})||'church';
+  const svg=renderer?.renderCelebrationSymbolSvg?.(kind,{size:52})||'';
+  return `<div class="index-celebration-symbol" data-symbol="${esc(kind)}">${svg}</div>`;
+}
+
 function generateIndex(){
   state.indexReviewVisible=false;
   // Build 073: the real browser-connected ScoreBank LIBRARY is authoritative.
@@ -8711,7 +8942,7 @@ function purgeStaleLibraryReferences(){
   }
   purgeStaleExtraSelections();
 }
-const PLANNING_LIBRARY_KEYS=['entrance','gifts','communion','meditation','sending'];
+const PLANNING_LIBRARY_KEYS=['entrance','gifts','communion','meditation','marian','sending'];
 function extraSelectionPaths(section){
   return Array.from(state.librarySelectionExtras?.[section]||[]).map(String).filter(Boolean);
 }
@@ -9273,8 +9504,8 @@ function libraryWorkspace(e,options={}){
   const compactLibraryStatus=total
     ? `<div class="success library-session-summary"><strong>${e?'Biblioteca lista':'Library ready'}:</strong> ${folderSummary}${roleSummary?`<br><small>${roleSummary}</small>`:''}<br><small>${labels.privacy}</small></div>`
     : `<div class="notice library-session-summary"><strong>${e?'Biblioteca necesaria':'Library required'}:</strong> ${e?'Conecta o actualiza ScoreBank LIBRARY en “Conexiones de biblioteca” al inicio de esta página.':'Connect or refresh ScoreBank LIBRARY in “Library connections” at the top of this page.'}</div>`;
-  const planningHeading=independentPsalmAcclamationMode()?(e?'Selección de cantos para Funeral':'Funeral song selection'):(e?'Selección de cantos LCP/TLP':'LCP/TLP song selection');
-  const planningHelp=independentPsalmAcclamationMode()?(e?'Entrada, Ofrendas, Comunión, Meditación y Salida son elecciones libres del organizador/familia.':'Entrance, Gifts, Communion, Meditation, and Sending Forth are free director/family choices.'):(e?'Elige aquí Entrada, Ofertorio, Comunión y Salida. Estas opciones aparecen inmediatamente después de las fuentes detectadas.':'Choose Entrance, Preparation of the Gifts, Communion, and Sending Forth here. These options appear immediately after the detected sources.');
+  const planningHeading=independentPsalmAcclamationMode()?(e?'Selección de cantos para Funeral':'Funeral song selection'):(weddingMode()?(e?'Selección de cantos para Boda':'Wedding song selection'):(e?'Selección de cantos LCP/TLP':'LCP/TLP song selection'));
+  const planningHelp=independentPsalmAcclamationMode()?(e?'Entrada, Ofrendas, Comunión, Meditación y Salida son elecciones libres del organizador/familia.':'Entrance, Gifts, Communion, Meditation, and Sending Forth are free director/family choices.'):(weddingMode()?(e?'En Boda puedes elegir Entrada, Ofrendas, Comunión, Meditación, Canto a María y Salida. El Canto a María aparece después de la Meditación.':'For a Wedding you can choose Entrance, Gifts, Communion, Meditation, Marian Song, and Sending Forth. The Marian Song appears after Meditation.'):(e?'Elige aquí Entrada, Ofertorio, Comunión y Salida. Estas opciones aparecen inmediatamente después de las fuentes detectadas.':'Choose Entrance, Preparation of the Gifts, Communion, and Sending Forth here. These options appear immediately after the detected sources.'));
   return `<section class="library-workspace"><div class="library-workspace-head"><div><h3>${labels.title}</h3><p>${labels.intro}</p></div>${total?`<span class="badge">${total} PDF</span>`:''}</div>${pairMarkup}${bundleMarkup}${compactLibraryStatus}${liturgicalSourceStatus(e)}<div class="library-planning-inline"><h4>${planningHeading}</h4><p class="match-hint">${planningHelp}</p>${suggestionSections(suggestionsFor(),e)}</div>${manifest?`<div class="library-match-list">${rows}</div>`:''}${pageStatus}${blockerMarkup}${status}<div class="button-row"><button class="secondary" id="matchLibraryBtn" ${total?'':'disabled'}>${labels.match}</button>${allowAssembly?`<button id="assembleBookBtn" ${ready?'':'disabled'}>${state.assemblyStatus==='working'?labels.working:labels.build}</button>`:''}</div></section>`;
 }
 function bindLibraryWorkspace(){
@@ -9666,12 +9897,12 @@ function indexView(){
     bindConnectionDashboard('index');
     return;
   }
-  const L=e?{entrance:'Entrada',kyrie:'Kyrie',gloria:'Gloria',psalm:'Salmo',gospel:'Aclamación del Evangelio',gifts:'Preparación de las Ofrendas',massSetting:'Ordinario de la Misa',holy:'Santo',memorial:'Aclamación conmemorativa',amen:'Gran Amén',ourFather:'Padre Nuestro (opcional)',lamb:'Cordero de Dios',communion:'Comunión',meditation:'Meditación',sending:'Salida'}:{entrance:'Entrance',kyrie:'Kyrie',gloria:'Gloria',psalm:'Psalm',gospel:'Gospel Acclamation',gifts:'Preparation of the Gifts',massSetting:'Mass Setting',holy:'Holy',memorial:'Memorial Acclamation',amen:'Great Amen',ourFather:'Our Father (optional)',lamb:'Lamb of God',communion:'Communion',meditation:'Meditation',sending:'Sending Forth'};
-  let order=['entrance','kyrie'];if(c.gloria)order.push('gloria');order.push('psalm','gospel','gifts','holy','memorial','amen','ourFather','lamb','communion');if(c.meditation!==false||String(state.index?.meditation||'').trim())order.push('meditation');order.push('sending');
+  const L=e?{entrance:'Entrada',kyrie:'Kyrie',gloria:'Gloria',psalm:'Salmo',gospel:'Aclamación del Evangelio',gifts:'Preparación de las Ofrendas',massSetting:'Ordinario de la Misa',holy:'Santo',memorial:'Aclamación conmemorativa',amen:'Gran Amén',ourFather:'Padre Nuestro (opcional)',lamb:'Cordero de Dios',communion:'Comunión',meditation:'Meditación',marian:'Canto a María',sending:'Salida'}:{entrance:'Entrance',kyrie:'Kyrie',gloria:'Gloria',psalm:'Psalm',gospel:'Gospel Acclamation',gifts:'Preparation of the Gifts',massSetting:'Mass Setting',holy:'Holy',memorial:'Memorial Acclamation',amen:'Great Amen',ourFather:'Our Father (optional)',lamb:'Lamb of God',communion:'Communion',meditation:'Meditation',marian:'Marian Song',sending:'Sending Forth'};
+  let order=['entrance','kyrie'];if(c.gloria)order.push('gloria');order.push('psalm','gospel','gifts','holy','memorial','amen','ourFather','lamb','communion');if(c.meditation!==false||String(state.index?.meditation||'').trim())order.push('meditation');if(weddingMode())order.push('marian');order.push('sending');
   const rows=order.map(id=>{const locked=(id==='psalm'||id==='gospel')&&!liturgicalManualOverride(id)&&src?.resolved&&src?.psalm&&src?.gospel;return `<div class="index-row ${locked?'official-row':''}"><label>${L[id]}${locked?`<small>${esc(src.source)} · ${sourcePageLabel(id==='psalm'?src.psalm:src.gospel,e)}</small>`:''}</label><input id="${id}" value="${esc(state.index[id]||'')}" ${locked?'readonly':''}></div>`;}).join('');
   const indexHeading='INDEX';
   const finalTimeLine=state.celebrationType==='funeral'&&state.funeralTime?` · ${e?'Hora':'Time'} ${esc(state.funeralTime)}`:'';
-  app.innerHTML=`<section class="card">${connectionDashboard(e)}<span class="badge">${e?'INDEX FINAL':'FINAL INDEX'}</span><p class="index-language-label"><strong>${esc(languageDisplayName())}</strong></p><h2>${indexHeading}</h2><p><strong>${esc(c.celebration)}</strong><br>${fmt(c.date,state.language)}${finalTimeLine} · ${esc(state.parish)}</p><div class="index-list">${rows}</div>${libraryWorkspace(e,{allowAssembly:true})}<div class="button-row"><button class="secondary" id="workspaceBtn">← ${e?'Volver a partituras':'Back to score matching'}</button><button id="saveBtn">${e?'Guardar INDEX':'Save INDEX'}</button><button class="ghost" id="printBtn">${e?'Imprimir vista':'Print view'}</button></div></section>`;
+  app.innerHTML=`<section class="card">${connectionDashboard(e)}${indexCelebrationSymbolMarkup()}<span class="badge">${e?'INDEX FINAL':'FINAL INDEX'}</span><p class="index-language-label"><strong>${esc(languageDisplayName())}</strong></p><h2>${indexHeading}</h2><p><strong>${esc(c.celebration)}</strong><br>${fmt(c.date,state.language)}${finalTimeLine} · ${esc(state.parish)}</p><div class="index-list">${rows}</div>${libraryWorkspace(e,{allowAssembly:true})}<div class="button-row"><button class="secondary" id="workspaceBtn">← ${e?'Volver a partituras':'Back to score matching'}</button><button id="saveBtn">${e?'Guardar INDEX':'Save INDEX'}</button><button class="ghost" id="printBtn">${e?'Imprimir vista':'Print view'}</button></div></section>`;
   document.getElementById('workspaceBtn').addEventListener('click',()=>{save();state.indexReviewVisible=false;persist();indexView();});
   document.getElementById('saveBtn').addEventListener('click',()=>save(true));
   document.getElementById('printBtn').addEventListener('click',()=>{save();const result=window.ScoreBankMassBookRenderer?.openMassBookWindow?.({language:state.language,date:state.date,time:state.funeralTime,parish:state.parish,celebration:state.celebration,index:state.index,sourceData:sourceFor()});if(!result?.ok){alert(e?'No se pudo abrir la vista imprimible. Permite ventanas emergentes para este archivo y vuelve a intentarlo.':'The printable view could not be opened. Allow pop-ups for this file and try again.');}});
