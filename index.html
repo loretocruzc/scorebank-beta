@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover"><title>ScoreBank v0.10.24 Mobile Beta</title><meta name="theme-color" content="#172033"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="ScoreBank"><style>
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover"><title>ScoreBank v0.10.25 Mobile Beta</title><meta name="theme-color" content="#172033"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="ScoreBank"><style>
 :root{--navy:#172033;--navy2:#24314c;--bg:#f3f5f9;--card:#fff;--text:#182033;--muted:#6b7280;--line:#d8deea;--green:#18794e;--green-soft:#eaf7f0}*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}.topbar{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:22px 18px;box-shadow:0 4px 18px #0003}.topbar>div,.shell{max-width:1040px;margin:auto}.brand{font-size:32px;font-weight:800}.version{margin-top:5px;color:#dce4f2;font-size:14px}.shell{padding:24px 16px 60px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 10px 30px rgba(23,32,51,.07);margin-bottom:18px}.hero{padding:30px}h1,h2{margin-top:0}h1{font-size:clamp(30px,5vw,48px);margin-bottom:10px}h2{font-size:26px}p{line-height:1.55}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.full{grid-column:1/-1}label{display:block;font-weight:700;margin-bottom:7px}input,select{width:100%;padding:13px 14px;border:1px solid #bcc6d6;border-radius:12px;font-size:17px;background:#fff}.button-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}button{border:0;border-radius:12px;padding:13px 18px;font-size:16px;font-weight:750;cursor:pointer;background:var(--green);color:#fff}button.secondary{background:#e9edf4;color:var(--text)}button.ghost{background:transparent;color:var(--navy);border:1px solid var(--line)}.summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}.summary>div{padding:14px;border-radius:13px;background:#f7f8fb;border:1px solid #e4e8f0}.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--green-soft);color:var(--green);font-weight:800;font-size:13px}.notice{padding:14px 16px;border-radius:13px;background:#fff7df;border:1px solid #efd58c;margin:16px 0}.success{padding:14px 16px;border-radius:13px;background:var(--green-soft);border:1px solid #b8dfc8;color:#105c3c;margin:16px 0}.index-list{display:grid;gap:12px}.index-row{display:grid;grid-template-columns:260px 1fr;gap:14px;align-items:center;padding:12px;border:1px solid var(--line);border-radius:14px}.index-row label{margin:0}@media(max-width:720px){.grid,.summary{grid-template-columns:1fr}.index-row{grid-template-columns:1fr}.card{padding:18px}}
 .source-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:20px 0}.source-card{border:1px solid var(--line);border-radius:16px;padding:18px;background:#fbfcfe}.source-title{font-size:12px;font-weight:850;letter-spacing:.08em;color:var(--green);margin-bottom:8px}.source-card h3{margin:0 0 10px}.response{font-size:20px;font-weight:800;line-height:1.35}.source-meta{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:12px;margin-top:14px;color:#667085;font-size:13px}.official-row{background:var(--green-soft);border-color:#b8dfc8}.index-row label small{display:block;color:#667085;font-weight:500;margin-top:4px}.official-row input{background:#fff;color:#12263f;font-weight:650}@media(max-width:720px){.source-grid{grid-template-columns:1fr}}
 /* Build 004 — impresión compacta en una sola hoja US Letter */
@@ -292,6 +292,13 @@ input[type=file]{max-width:100%;overflow:hidden}
 .index-celebration-symbol{display:flex;justify-content:center;align-items:center;min-height:58px;margin:2px 0 8px}.index-celebration-symbol svg{display:block;max-width:58px;max-height:58px}
 
 
+/* Build 125 — búsqueda OCP de Difuntos siempre visible y compacta */
+.funeral-ocp-search{margin:16px 0 8px;padding:13px 14px;border:1px solid #c7d8ce;border-radius:14px;background:#f7faf8}
+.funeral-ocp-search-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.funeral-ocp-search strong{color:var(--green)}
+.funeral-ocp-search small{display:block;color:var(--muted);line-height:1.35;margin-top:3px}
+.funeral-ocp-search button{margin-top:10px;width:100%}
+.funeral-ocp-search .notice,.funeral-ocp-search .success{margin:10px 0 0;padding:9px 11px;font-size:13px}
 /* Build 121 — flujo limpio: mostrar solo lo necesario y revelar alternativas bajo demanda */
 .manual-song-alternatives,
 .liturgical-alternatives,
@@ -331,7 +338,7 @@ input[type=file]{max-width:100%;overflow:hidden}
 
 /* Build 122 — interfaz de preparación mínima y orden litúrgico */
 .mass-engine-compact.advanced-only,.celebration-meta-compact{margin:18px 0 0;border:1px solid var(--line);border-radius:14px;background:#fafbfd}.mass-engine-compact.advanced-only>summary,.celebration-meta-compact>summary{cursor:pointer;padding:13px 15px;font-weight:750;color:var(--muted);list-style:none}.mass-engine-compact.advanced-only>summary::-webkit-details-marker,.celebration-meta-compact>summary::-webkit-details-marker{display:none}.mass-engine-compact.advanced-only>summary:after,.celebration-meta-compact>summary:after{content:' +';float:right}.mass-engine-compact.advanced-only[open]>summary:after,.celebration-meta-compact[open]>summary:after{content:' −'}.mass-engine-compact.advanced-only>summary small{font-weight:500;color:var(--muted)}.mass-engine-advanced{border-top:1px solid var(--line);padding-top:14px}.compact-meta{padding:0 14px 14px}.ocp-psalm-count{font-size:13px;color:var(--muted);margin:4px 0 8px}.funeral-liturgical-panel .match-hint{display:none}.funeral-liturgical-panel details[open] .match-hint{display:block}.suggestion-section>.suggestion-head small{color:var(--muted)}
-</style></head><body><header class="topbar"><div><div class="brand">🎼 ScoreBank</div><div class="version">v0.10.24 · Mobile Beta · Build 124</div></div></header><main id="app" class="shell"></main><script>
+</style></head><body><header class="topbar"><div><div class="brand">🎼 ScoreBank</div><div class="version">v0.10.25 · Mobile Beta · Build 125</div></div></header><main id="app" class="shell"></main><script>
 (function initializeLiturgicalCalendar(global) {
   'use strict';
 
@@ -7616,7 +7623,7 @@ const funeralTimeOptionMarkup=(value,e)=>`<option value="">${e?'Seleccionar hora
 const validFuneralTimeOption=value=>FUNERAL_TIME_OPTIONS.includes(String(value||'').trim());
 const funeralLiturgicalSearchTimers={};
 // Previous planning cache markers: 101-funeral-director-workflow-v1 · 102-funeral-live-choice-v1 · 103-funeral-choice-collapse-v1
-const PLANNING_CACHE_VERSION='123-2026-10-04-exact-source-v1';
+const PLANNING_CACHE_VERSION='125-funeral-ocp-history-v1';
 function planningContextSignature(){const c=state.celebration?.celebration||state.celebrationTitle||'';return [PLANNING_CACHE_VERSION,state.language,state.date,state.celebration?.cycle||'',state.celebrationType||'',String(c).toLowerCase().replace(/\s+/g,' ').trim()].join('|');}
 function funeralPlanningDate(){const year=Number(String(state.date||'').slice(0,4))||new Date().getFullYear();return `${year}-11-02`;}
 function funeralPlanningCycle(){const date=funeralPlanningDate();const civil=new Date(`${date}T12:00:00Z`);return window.ScoreBankLiturgicalCalendar?.cycleForDate?.(civil)||state.celebration?.cycle||'';}
@@ -8161,7 +8168,7 @@ function enforcePreparationContext(){
   return true;
 }
 function persist(){const safe={...state,compiledMassSettingFile:null,massFolderFiles:[],massFolderCatalog:[],libraryFiles:[],libraryCatalog:null,libraryManifest:null,celebrationModel:state.celebrationModel?.toPlainObject?.()||null};localStorage.setItem('scorebank-v070-build007',JSON.stringify(safe));}
-function welcome(){app.innerHTML=`<section class="card hero"><span class="badge">BUILD 124 · FECHA → CELEBRACIÓN → SALMO/ALELUYA OCP</span><h1>Weekly Mass Book</h1><p>Selecciona la música en el orden litúrgico. Las opciones secundarias permanecen ocultas hasta que las necesites.</p><div class="success"><strong>Regla permanente:</strong> al elegir una fecha de calendario, ScoreBank identifica la celebración y resuelve automáticamente el Salmo y la Aclamación OCP desde RYA/R&amp;A. Si una fecha aún no está precargada, usa el libro anual conectado; la búsqueda manual queda solo como alternativa.</div><div class="button-row"><button id="startBtn">Preparar celebración</button></div></section>`;document.getElementById('startBtn').addEventListener('click',renderForm);}
+function welcome(){app.innerHTML=`<section class="card hero"><span class="badge">BUILD 125 · OCP DIFUNTOS RESTAURADO + NO REGRESIÓN</span><h1>Weekly Mass Book</h1><p>Selecciona la música en el orden litúrgico. ScoreBank conserva la búsqueda OCP de Difuntos del 2 de noviembre en español e inglés.</p><div class="success"><strong>Regla permanente:</strong> al elegir una fecha de calendario, ScoreBank identifica la celebración y resuelve automáticamente el Salmo y la Aclamación OCP desde RYA/R&amp;A. Si una fecha aún no está precargada, usa el libro anual conectado; la búsqueda manual queda solo como alternativa.</div><div class="button-row"><button id="startBtn">Preparar celebración</button></div></section>`;document.getElementById('startBtn').addEventListener('click',renderForm);}
 function renderForm(){
   const e=uiIsSpanish();
   const suggested=window.ScoreBankLiturgicalCalendar?.identify?.(state.date,calendarLanguage());
@@ -8722,6 +8729,15 @@ function plannerRowsForFuneralMoment(data,moment){
     return families.length&&families.every(family=>[...allowed].some(allowedFamily=>family===allowedFamily||family.startsWith(allowedFamily+' ')));
   });
 }
+function funeralOcpSearchControl(e){
+  const hasLibrary=Array.isArray(state.libraryCatalog)&&state.libraryCatalog.length>0;
+  const loaded=suggestionsFor();
+  const count=loaded?Object.values(loaded.moments||{}).reduce((n,rows)=>n+(rows?.length||0),0):0;
+  const working=state.planningSuggestionStatus==='working';
+  const languageNote=isBilingual()?(e?'Español: LCP · English: TLP':'Spanish: LCP · English: TLP'):(state.language==='en'?'TLP · English':'LCP · Español');
+  const status=state.planningSuggestionMessage?`<div class="${state.planningSuggestionStatus==='success'?'success':'notice'}">${esc(state.planningSuggestionMessage)}</div>`:'';
+  return `<div class="funeral-ocp-search"><div class="funeral-ocp-search-head"><div><strong>${e?'Sugerencias OCP · Difuntos 2 de noviembre':'OCP suggestions · All Souls, November 2'}</strong><small>${languageNote}${count?` · ${count} ${e?'sugerencias':'suggestions'}`:''}</small></div></div><button type="button" class="secondary" id="funeralOcpSearchBtn" ${working||!hasLibrary?'disabled':''}>${working?(e?'Buscando sugerencias OCP…':'Searching OCP suggestions…'):(e?'Buscar / actualizar sugerencias OCP':'Search / refresh OCP suggestions')}</button>${!hasLibrary?`<small>${e?'Conecta ScoreBank LIBRARY arriba para buscar en LCP/TLP actuales y de años anteriores.':'Connect ScoreBank LIBRARY above to search current and historical LCP/TLP planners.'}</small>`:''}${status}</div>`;
+}
 function funeralSuggestionSections(data,e){
   const labels=e?{entrance:'Entrada',gifts:'Preparación de las Ofrendas',communion:'Comunión',meditation:'Meditación',sending:'Salida'}:{entrance:'Entrance',gifts:'Preparation of the Gifts',communion:'Communion',meditation:'Meditation',sending:'Sending Forth'};
   const sourceLabel=isBilingual()?'LCP + TLP':(state.language==='en'?'TLP':'LCP');
@@ -8733,7 +8749,7 @@ function funeralSuggestionSections(data,e){
     return `<section class="suggestion-section funeral-planner-section" data-moment="${moment}"><div class="suggestion-head"><h3>${labels[moment]}</h3><small>${sourceLabel} · ${e?'Difuntos 2 Nov':'All Souls Nov 2'} · ${rows.length}</small></div>${picker}${manualSongPanel(moment,e)}</section>`;
   };
   const meditation=`<section class="suggestion-section funeral-manual-section meditation-section" data-moment="meditation"><div class="suggestion-head"><h3>${labels.meditation}</h3><small>${e?'Opcional':'Optional'}</small></div>${manualSongPanel('meditation',e)}</section>`;
-  return `${recommended('entrance')}${liturgicalPlanningSection('psalm',e)}${liturgicalPlanningSection('gospel',e)}${recommended('gifts')}${recommended('communion')}${meditation}${recommended('sending')}`;
+  return `${funeralOcpSearchControl(e)}${recommended('entrance')}${liturgicalPlanningSection('psalm',e)}${liturgicalPlanningSection('gospel',e)}${recommended('gifts')}${recommended('communion')}${meditation}${recommended('sending')}`;
 }
 
 function suggestionSections(data,e){
@@ -8850,6 +8866,8 @@ function resetPreparationTransientState(){
   state.assemblyMessage='';
 }
 function bindSuggestions(renderTarget='result'){
+  const funeralOcpSearch=document.getElementById('funeralOcpSearchBtn');
+  if(funeralOcpSearch)funeralOcpSearch.addEventListener('click',()=>extractPlanningSuggestions());
   document.querySelectorAll('.suggestion-select').forEach(sel=>sel.addEventListener('change',()=>{
     const m=sel.dataset.moment;
     const previous=state.index[m]||'';
@@ -9538,6 +9556,76 @@ function maybeLocateOfficialSourcePages(){
     window.setTimeout(()=>locateOfficialSourcePages({automatic:true}),50);
   }
 }
+function funeralPlannerSourceRows(){
+  const engine=window.ScoreBankLiturgicalSourceEngine;
+  if(!engine||!Array.isArray(state.libraryCatalog))return [];
+  const currentYear=Number(funeralPlanningDate().slice(0,4));
+  const wanted=new Set(expectedPlanningFamilies().map(f=>String(f).toLowerCase()));
+  const rows=state.libraryCatalog.map(candidate=>({candidate,meta:engine.describe(candidate)})).filter(row=>{
+    const family=String(row?.meta?.family||'').toLowerCase();
+    const year=Number(row?.meta?.year||0);
+    if(!wanted.has(family))return false;
+    if(year&&year>currentYear)return false;
+    return true;
+  });
+  const priority=row=>{
+    const year=Number(row?.meta?.year||0);
+    const active=row?.meta?.tier===engine.TIERS.ACTIVE;
+    if(year===currentYear&&active)return 0;
+    if(year===currentYear)return 1;
+    if(year>0)return 2;
+    return 3;
+  };
+  rows.sort((a,b)=>priority(a)-priority(b)||Number(b.meta.year||0)-Number(a.meta.year||0)||String(a.meta.path||'').localeCompare(String(b.meta.path||'')));
+  const perFamily=new Map();
+  const out=[];
+  for(const row of rows){
+    const family=String(row?.meta?.family||'').toLowerCase();
+    const n=perFamily.get(family)||0;
+    // Current planner + up to three historical/reference planners per language.
+    if(n>=4)continue;
+    perFamily.set(family,n+1);out.push(row);
+  }
+  return out;
+}
+function funeralPlannerContextForSource(sourceRow){
+  const engine=window.ScoreBankLiturgicalSourceEngine;
+  const family=String(sourceRow?.meta?.family||'').toLowerCase();
+  const year=Number(sourceRow?.meta?.year||0)||Number(funeralPlanningDate().slice(0,4));
+  const language=family===engine?.FAMILIES?.TLP?'en':'es';
+  const cycle=String(sourceRow?.meta?.cycle||'')||window.ScoreBankLiturgicalCalendar?.cycleForDate?.(new Date(`${year}-11-02T12:00:00Z`))||'';
+  return {language,date:`${year}-11-02`,year,cycle,celebration:language==='en'?'The Commemoration of All the Faithful Departed (All Souls)':'Conmemoración de Todos los Fieles Difuntos',funeralPlanning:true};
+}
+async function historicalFuneralPlanningRows(extractor){
+  const engine=window.ScoreBankLiturgicalSourceEngine;
+  const result={moments:{entrance:[],gifts:[],communion:[],sending:[],psalm:[]},sources:[],sourceFamilies:[]};
+  if(!extractor||!engine)return result;
+  const currentYear=Number(funeralPlanningDate().slice(0,4));
+  const rows=funeralPlannerSourceRows().filter(row=>{
+    const year=Number(row?.meta?.year||0);
+    return year!==currentYear||row?.meta?.tier!==engine.TIERS.ACTIVE;
+  });
+  const familySet=new Set();
+  for(const sourceRow of rows){
+    try{
+      const context=funeralPlannerContextForSource(sourceRow);
+      const extracted=await extractor.extractFromSource(sourceRow,context);
+      if(!extracted?.found)continue;
+      result.sources.push(sourceRow);
+      const family=String(sourceRow.meta.family||'').toUpperCase();
+      const year=Number(sourceRow.meta.year||context.year||0);
+      familySet.add(family);
+      for(const moment of Object.keys(result.moments)){
+        for(const title of extracted?.moments?.[moment]||[]){
+          if(!String(title||'').trim())continue;
+          result.moments[moment].push({title:String(title).trim(),source:`${family} ${year} ARCHIVE`,page:moment==='psalm'?(extracted?.psalmSuggestion?.page||extracted?.anchorPage||null):(extracted?.anchorPage||null)});
+        }
+      }
+    }catch(_error){}
+  }
+  result.sourceFamilies=[...familySet];
+  return result;
+}
 async function historicalFuneralPsalmRows(extractor){
   const engine=window.ScoreBankLiturgicalSourceEngine;
   if(!extractor||!engine||!Array.isArray(state.libraryCatalog))return [];
@@ -9583,20 +9671,24 @@ async function extractPlanningSuggestions(options={}){
       sourceSeen.add(path);sourceRows.push(row);
     }
   }
-  const availableFamilies=[...new Set(sourceRows.map(row=>String(row?.meta?.family||'').toUpperCase()))];
-  if(!sourceRows.length){
+  // Funeral is a special case: if the current ACTIVE planner has no Nov. 2 block,
+  // also read recent LCP/TLP planners in REFERENCE/ARCHIVE. This preserves the
+  // director's Nov. 2 OCP suggestion bank in Spanish, English and Bilingual mode.
+  const historicalPlanning=funeral?await historicalFuneralPlanningRows(extractor):null;
+  const historicalTotal=historicalPlanning?Object.values(historicalPlanning.moments||{}).reduce((n,rows)=>n+(rows?.length||0),0):0;
+  if(!sourceRows.length&&!historicalTotal){
     state.planningSuggestions=null;
     state.planningSuggestionStatus='error';
     state.planningSuggestionMessage=funeral
-      ?(e?`No encontré ${expectedFamilies.join(' + ')} ACTIVE para el 2 de noviembre de ${funeralPlanningDate().slice(0,4)}. Conecta los planners de ese año para obtener sugerencias de Funeral.`:`No ACTIVE ${expectedFamilies.join(' + ')} planner was found for November 2, ${funeralPlanningDate().slice(0,4)}. Connect that year's planner(s) to get Funeral suggestions.`)
-      :(e?'No encontré LCP/TLP dentro de ACTIVE para este año/ciclo. REFERENCE y ARCHIVE no se usarán para sugerencias automáticas.':'No ACTIVE LCP/TLP source was found for this year/cycle. REFERENCE and ARCHIVE will not be used for automatic suggestions.');
+      ?(e?`No encontré planners OCP ${expectedFamilies.join(' + ')} del 2 de noviembre en la biblioteca conectada. Conecta ScoreBank LIBRARY y vuelve a buscar.`:`No November 2 OCP ${expectedFamilies.join(' + ')} planners were found in the connected library. Connect ScoreBank LIBRARY and search again.`)
+      :(e?'No encontré LCP/TLP dentro de ACTIVE para este año/ciclo.':'No ACTIVE LCP/TLP source was found for this year/cycle.');
     if(!options.automatic)result();
     return;
   }
   state.planningSuggestions=null;
   state.planningSuggestionStatus='working';
   state.planningSuggestionMessage=funeral
-    ?(e?`Leyendo sugerencias de Difuntos del 2 de noviembre en ${expectedFamilies.join(' + ')} ACTIVE…`:`Reading All Souls, November 2 suggestions from ACTIVE ${expectedFamilies.join(' + ')}…`)
+    ?(e?`Buscando sugerencias OCP del 2 de noviembre en ${expectedFamilies.join(' + ')} actuales y de años anteriores…`:`Searching current and historical ${expectedFamilies.join(' + ')} planners for OCP November 2 suggestions…`)
     :(e?'Leyendo SOLO LCP ACTIVE en español y verificando el bloque exacto…':'Reading ONLY ACTIVE TLP in English and verifying the exact celebration block…');
   if(!options.automatic)result();
   try{
@@ -9604,43 +9696,43 @@ async function extractPlanningSuggestions(options={}){
     for(const context of contexts)extractedSets.push(await extractor.extractPlanningSuggestions(state.libraryCatalog,context));
     const merged={entrance:[],gifts:[],communion:[],sending:[],psalm:[]};
     const seen=Object.fromEntries(Object.keys(merged).map(key=>[key,new Map()]));
-    for(const extracted of extractedSets){
-      for(const [moment,rows] of Object.entries(extracted.moments||{})){
-        if(!merged[moment])continue;
-        for(const row of rows||[]){
-          const title=typeof row==='string'?row:String(row?.title||'');
-          const key=title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
-          if(!key)continue;
-          const source=typeof row==='string'?'':String(row?.source||'').toUpperCase();
-          const existing=seen[moment].get(key);
-          if(existing){
-            const families=new Set(String(existing.source||'').split(/\s*\+\s*/).filter(Boolean));
-            if(source)families.add(source);
-            existing.source=[...families].join(' + ');
-            continue;
-          }
-          const item=typeof row==='string'?{title,source:''}:{...row,title,source};
-          seen[moment].set(key,item);merged[moment].push(item);
-        }
-      }
-    }
-    if(funeral){
-      const historicalRows=await historicalFuneralPsalmRows(extractor);
-      for(const row of historicalRows){
-        const title=String(row?.title||'').trim();
+    const mergeRows=(moment,rows)=>{
+      if(!merged[moment])return;
+      for(const row of rows||[]){
+        const title=typeof row==='string'?row:String(row?.title||'');
         const key=title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
-        if(!key||seen.psalm.has(key))continue;
-        seen.psalm.set(key,row);merged.psalm.push(row);
+        if(!key)continue;
+        const source=typeof row==='string'?'':String(row?.source||'').toUpperCase();
+        const existing=seen[moment].get(key);
+        if(existing){
+          const families=new Set(String(existing.source||'').split(/\s*\+\s*/).filter(Boolean));
+          if(source)families.add(source);
+          existing.source=[...families].join(' + ');
+          continue;
+        }
+        const item=typeof row==='string'?{title,source:''}:{...row,title,source};
+        seen[moment].set(key,item);merged[moment].push(item);
       }
+    };
+    for(const extracted of extractedSets)for(const [moment,rows] of Object.entries(extracted.moments||{}))mergeRows(moment,rows);
+    if(funeral&&historicalPlanning){
+      for(const [moment,rows] of Object.entries(historicalPlanning.moments||{}))mergeRows(moment,rows);
+      const historicalPsalmRows=await historicalFuneralPsalmRows(extractor);
+      mergeRows('psalm',historicalPsalmRows);
     }
     const total=Object.values(merged).reduce((sum,arr)=>sum+(arr?.length||0),0);
-    const allSources=extractedSets.flatMap(extracted=>extracted.sources||[]);
-    const sourceFamilies=[...new Set(allSources.map(x=>String(x?.meta?.family||'').toUpperCase()).filter(Boolean))];
+    const currentSources=extractedSets.flatMap(extracted=>extracted.sources||[]);
+    const allSources=[...currentSources,...(historicalPlanning?.sources||[])];
+    const sourceFamilies=[...new Set([
+      ...allSources.map(x=>String(x?.meta?.family||'').toUpperCase()).filter(Boolean),
+      ...(historicalPlanning?.sourceFamilies||[]).map(x=>String(x||'').toUpperCase()).filter(Boolean)
+    ])];
     if(!funeral){
       const expectedFamily=state.language==='en'?'TLP':'LCP';
       if(sourceFamilies.length!==1||sourceFamilies[0]!==expectedFamily)throw new Error(`Planner source mismatch: expected ${expectedFamily}, received ${sourceFamilies.join(', ')||'none'}.`);
     }
-    state.planningSuggestions={moments:merged,sources:allSources.map(x=>x.meta.path),sourceFamily:sourceFamilies.join('+'),sourceFamilies,language:state.language,date:funeral?funeralPlanningDate():state.date,requestedDate:state.date,cycle:funeral?funeralPlanningCycle():(state.celebration?.cycle||''),celebration:funeral?'All Souls / Todos los Fieles Difuntos':(state.celebration?.celebration||''),mode:funeral?'funeral-all-souls':'weekly',cacheVersion:PLANNING_CACHE_VERSION,signature:planningContextSignature()};
+    const sourcePaths=[...new Set(allSources.map(x=>x?.meta?.path).filter(Boolean))];
+    state.planningSuggestions={moments:merged,sources:sourcePaths,sourceFamily:sourceFamilies.join('+'),sourceFamilies,language:state.language,date:funeral?funeralPlanningDate():state.date,requestedDate:state.date,cycle:funeral?funeralPlanningCycle():(state.celebration?.cycle||''),celebration:funeral?'All Souls / Todos los Fieles Difuntos':(state.celebration?.celebration||''),mode:funeral?'funeral-all-souls':'weekly',cacheVersion:PLANNING_CACHE_VERSION,signature:planningContextSignature()};
     if(!funeral){
       const pairHint=extractedSets[0]?.sourcePairPageHint;
       if(pairHint&&state.linkPsalmAcclamation){
@@ -9650,16 +9742,14 @@ async function extractPlanningSuggestions(options={}){
       }
     }
     const missingFamilies=expectedFamilies.filter(family=>!sourceFamilies.includes(family));
-    state.planningSuggestionStatus=total&&missingFamilies.length===0?'success':(total?'success':'error');
+    state.planningSuggestionStatus=total?'success':'error';
     if(funeral){
-      const base=e?`${total} sugerencias de Funeral OCP disponibles; los Salmos históricos detectados se agregan sin repetir.`:`${total} OCP Funeral suggestions available; detected historical Psalms are added without duplicates.`;
-      state.planningSuggestionMessage=missingFamilies.length
-        ?`${base} ${e?'Falta conectar':'Missing'} ${missingFamilies.join(' + ')} ACTIVE.`
-        :base;
+      const base=e?`${total} sugerencias OCP de Difuntos disponibles, sin repetir.`:`${total} OCP All Souls suggestions available, deduplicated.`;
+      state.planningSuggestionMessage=missingFamilies.length?`${base} ${e?'No encontré todavía':'Still missing'} ${missingFamilies.join(' + ')}.`:base;
     }else{
       state.planningSuggestionMessage=total
         ?(e?`${total} sugerencias en español confirmadas desde LCP ACTIVE para esta celebración.`:`${total} English suggestions confirmed from ACTIVE TLP for this celebration.`)
-        :(e?'LCP ACTIVE fue encontrado, pero no pude confirmar el bloque exacto de esta celebración. No mostraré cantos de otras fechas ni otras fuentes.':'ACTIVE TLP was found, but the exact celebration block could not be confirmed. Songs from other dates or sources will not be shown.');
+        :(e?'LCP ACTIVE fue encontrado, pero no pude confirmar el bloque exacto de esta celebración.':'ACTIVE TLP was found, but the exact celebration block could not be confirmed.');
     }
   }catch(error){
     state.planningSuggestions=null;
