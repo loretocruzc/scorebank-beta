@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover"><title>ScoreBank v0.10.28 Mobile Beta</title><meta name="theme-color" content="#172033"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="ScoreBank"><style>
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover"><title>ScoreBank v0.10.29 Mobile Beta</title><meta name="theme-color" content="#172033"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="ScoreBank"><style>
 :root{--navy:#172033;--navy2:#24314c;--bg:#f3f5f9;--card:#fff;--text:#182033;--muted:#6b7280;--line:#d8deea;--green:#18794e;--green-soft:#eaf7f0}*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}.topbar{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:22px 18px;box-shadow:0 4px 18px #0003}.topbar>div,.shell{max-width:1040px;margin:auto}.brand{font-size:32px;font-weight:800}.version{margin-top:5px;color:#dce4f2;font-size:14px}.shell{padding:24px 16px 60px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 10px 30px rgba(23,32,51,.07);margin-bottom:18px}.hero{padding:30px}h1,h2{margin-top:0}h1{font-size:clamp(30px,5vw,48px);margin-bottom:10px}h2{font-size:26px}p{line-height:1.55}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.full{grid-column:1/-1}label{display:block;font-weight:700;margin-bottom:7px}input,select{width:100%;padding:13px 14px;border:1px solid #bcc6d6;border-radius:12px;font-size:17px;background:#fff}.button-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}button{border:0;border-radius:12px;padding:13px 18px;font-size:16px;font-weight:750;cursor:pointer;background:var(--green);color:#fff}button.secondary{background:#e9edf4;color:var(--text)}button.ghost{background:transparent;color:var(--navy);border:1px solid var(--line)}.summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}.summary>div{padding:14px;border-radius:13px;background:#f7f8fb;border:1px solid #e4e8f0}.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--green-soft);color:var(--green);font-weight:800;font-size:13px}.notice{padding:14px 16px;border-radius:13px;background:#fff7df;border:1px solid #efd58c;margin:16px 0}.success{padding:14px 16px;border-radius:13px;background:var(--green-soft);border:1px solid #b8dfc8;color:#105c3c;margin:16px 0}.index-list{display:grid;gap:12px}.index-row{display:grid;grid-template-columns:260px 1fr;gap:14px;align-items:center;padding:12px;border:1px solid var(--line);border-radius:14px}.index-row label{margin:0}@media(max-width:720px){.grid,.summary{grid-template-columns:1fr}.index-row{grid-template-columns:1fr}.card{padding:18px}}
 .source-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:20px 0}.source-card{border:1px solid var(--line);border-radius:16px;padding:18px;background:#fbfcfe}.source-title{font-size:12px;font-weight:850;letter-spacing:.08em;color:var(--green);margin-bottom:8px}.source-card h3{margin:0 0 10px}.response{font-size:20px;font-weight:800;line-height:1.35}.source-meta{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:12px;margin-top:14px;color:#667085;font-size:13px}.official-row{background:var(--green-soft);border-color:#b8dfc8}.index-row label small{display:block;color:#667085;font-weight:500;margin-top:4px}.official-row input{background:#fff;color:#12263f;font-weight:650}@media(max-width:720px){.source-grid{grid-template-columns:1fr}}
 /* Build 004 — impresión compacta en una sola hoja US Letter */
@@ -339,9 +339,9 @@ input[type=file]{max-width:100%;overflow:hidden}
 /* Build 122 — interfaz de preparación mínima y orden litúrgico */
 .mass-engine-compact.advanced-only,.celebration-meta-compact{margin:18px 0 0;border:1px solid var(--line);border-radius:14px;background:#fafbfd}.mass-engine-compact.advanced-only>summary,.celebration-meta-compact>summary{cursor:pointer;padding:13px 15px;font-weight:750;color:var(--muted);list-style:none}.mass-engine-compact.advanced-only>summary::-webkit-details-marker,.celebration-meta-compact>summary::-webkit-details-marker{display:none}.mass-engine-compact.advanced-only>summary:after,.celebration-meta-compact>summary:after{content:' +';float:right}.mass-engine-compact.advanced-only[open]>summary:after,.celebration-meta-compact[open]>summary:after{content:' −'}.mass-engine-compact.advanced-only>summary small{font-weight:500;color:var(--muted)}.mass-engine-advanced{border-top:1px solid var(--line);padding-top:14px}.compact-meta{padding:0 14px 14px}.ocp-psalm-count{font-size:13px;color:var(--muted);margin:4px 0 8px}.funeral-liturgical-panel .match-hint{display:none}.funeral-liturgical-panel details[open] .match-hint{display:block}.suggestion-section>.suggestion-head small{color:var(--muted)}
 
-/* Build 128 — conexión de biblioteca inmediata + reglas litúrgicas protegidas */
+/* Build 129 — source matching for 04 Psalms folders + executable regression tests. */
 .calendar-source-preview{margin-top:2px}.calendar-source-preview .calendar-source-row{padding:8px 0;border-top:1px solid rgba(24,121,78,.18)}.calendar-source-preview .calendar-source-row:first-of-type{border-top:0}.calendar-source-preview small{display:block;margin-top:4px;color:#476154;line-height:1.35}.calendar-source-preview strong{color:#105c3c}.calendar-source-preview .liturgical-line{margin-top:4px}.calendar-source-preview-wrap[hidden]{display:none!important}
-</style></head><body><header class="topbar"><div><div class="brand">🎼 ScoreBank</div><div class="version">v0.10.28 · Mobile Beta · Build 128</div></div></header><main id="app" class="shell"></main><script>
+</style></head><body><!-- SCOREBANK-SEALED-CONTRACT-v1: SB-OCP-001, SB-OCP-002, SB-OCP-003, SB-SONG-001, SB-IPHONE-001. Run regression tests before publishing new builds. --><header class="topbar"><div><div class="brand">🎼 ScoreBank</div><div class="version">v0.10.29 · Mobile Beta · Build 129</div></div></header><main id="app" class="shell"></main><script>
 (function initializeLiturgicalCalendar(global) {
   'use strict';
 
@@ -998,7 +998,7 @@ window.ScoreBankSourceData = {
         aliases: ["Respond & Acclaim", "Respond and Acclaim", "R&A", "Respond & Acclaim 2026"]
       },
       psalm: {
-        page: null,
+page: null,
         pdfPage: null,
         reference: "Psalm 95:1-2, 6-7, 8-9",
         response: "If today you hear his voice, harden not your hearts."
@@ -1998,7 +1998,7 @@ window.ScoreBankSourceData = {
     }
     if (!boundaries.length) return [raw];
     const points = [0, ...Array.from(new Set(boundaries)).sort((a,b)=>a-b), raw.length];
-    const out = [];
+const out = [];
     for (let i = 0; i < points.length - 1; i++) {
       const part = raw.slice(points[i], points[i+1]).trim();
       if (part) out.push(part);
@@ -2998,7 +2998,7 @@ window.ScoreBankSuggestionsData = {
           "Que Brille Sobre Nosotros", "A Ti, Dios (Te Deum)", "Dios, el Gran YO SOY"
         ],
         gifts: [
-          "Soy Feliz", "Llénanos de Tu Gracia y de Tu Amor", "En Sus Alas",
+"Soy Feliz", "Llénanos de Tu Gracia y de Tu Amor", "En Sus Alas",
           "Instrumento de Tu Paz", "Llevemos al Señor el Vino y el Pan",
           "Mi Dios y Mi Todo", "Espero en Ti, Señor", "Nombre Sobre Todo Nombre", "Todo Es Tuyo"
         ],
@@ -3998,7 +3998,7 @@ window.ScoreBankMassSettingsData = {
   function renderCelebrationSymbolSvg(kind, options = {}) {
     const symbol = ['cross', 'rings', 'church'].includes(kind) ? kind : 'church';
     const size = Number(options.size || 48);
-    const stroke = escapeHtml(options.stroke || '#172033');
+const stroke = escapeHtml(options.stroke || '#172033');
     const common = `width="${size}" height="${size}" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"`;
 
     if (symbol === 'cross') {
@@ -4490,7 +4490,9 @@ window.ScoreBankMassSettingsData = {
     // whose filenames mention RYA or a Mass Setting, but they remain references.
     if (/\bliturgical cycles?\b/.test(normalized)) return LIBRARY_ROLES.HISTORICAL;
     if (/\bmass settings?\b/.test(normalized)) return LIBRARY_ROLES.MASS_SETTING;
-    if (/\b(respond and acclaim|respond acclaim|responde y aclama|rya|r and a|02 psalms|02 salmos)\b/.test(normalized)) return LIBRARY_ROLES.PSALM_SOURCE;
+    // SEALED SB-OCP-001: accept the user's actual 04 Psalms R&A/RYA layout,
+    // as well as legacy 02 Psalms folders and named annual sources.
+    if (/\b(respond and acclaim|respond acclaim|responde y aclama|rya|r and a|(?:02|04) psalms|(?:02|04) salmos)\b/.test(normalized)) return LIBRARY_ROLES.PSALM_SOURCE;
     if (/\b(01 tlp lcp|today s liturgy|todays liturgy|liturgia y cancion|\btlp\b|\blcp\b)\b/.test(normalized)) return LIBRARY_ROLES.PLANNING_SOURCE;
     if (/\bchristian music\b/.test(normalized) || /\bmusic library\b/.test(normalized)) return LIBRARY_ROLES.MUSIC;
     return LIBRARY_ROLES.OTHER;
@@ -4998,7 +5000,7 @@ window.ScoreBankMassSettingsData = {
 
   const DEFAULT_SOURCE_ALIASES = Object.freeze({
     es: ['Responde y Aclama', 'RYA', 'Responde & Aclama'],
-    en: ['Respond & Acclaim', 'Respond and Acclaim', 'R&A']
+en: ['Respond & Acclaim', 'Respond and Acclaim', 'R&A']
   });
 
   const SEASON_ALIASES = Object.freeze({
@@ -5106,10 +5108,13 @@ window.ScoreBankMassSettingsData = {
   }
 
   function isPreferredSourceFolder(haystack, language) {
+    // SEALED SB-OCP-002: the official annual editions may live under
+    // "04 Psalms R&A" or "04 Psalms RYA", and may be well under 6 MB.
+    // Folder identity takes precedence over size-based weekly-extract guessing.
     if (language === 'es') {
-      return /\b02 psalms\b|\b02 salmos\b|\brya esp\b|\bresponde y aclama\b/.test(haystack);
+      return /\b(?:02|04) (?:psalms|salmos)\b.*\brya\b|\brya esp\b|\bresponde y aclama\b|\brya\b|\b(?:02|04) salmos\b/.test(haystack);
     }
-    return /\b02 psalms\b|\bra eng\b|\brespond and acclaim\b/.test(haystack);
+    return /\b(?:02|04) psalms\b.*\br and a\b|\bra eng\b|\brespond and acclaim\b|\br and a\b|\b(?:02|04) psalms\b/.test(haystack);
   }
 
   function sourceContextCompatibility(candidate, sourceData, options = {}) {
@@ -5281,7 +5286,13 @@ window.ScoreBankMassSettingsData = {
   }
 
   function isLikelyAnnualSource(candidate) {
-    return Number(candidate?.size || 0) >= 6 * 1024 * 1024;
+    // SEALED SB-OCP-003: compressed annual R&A/RYA editions can be < 6 MB.
+    // Do not copy the ENTIRE annual PDF as a Psalm or Alleluia score.
+    const name = normalizeText(`${candidate?.relativePath || ''} ${candidate?.filename || ''}`);
+    const explicitlyWeekly = /\b(weekly|extracto semanal|weekly extract|songbook page)\b/.test(name);
+    const namedAnnual = /\b(?:20\d{2})\b/.test(name) &&
+      /\b(respond and acclaim|responde y aclama|rya|r and a)\b/.test(name);
+    return !explicitlyWeekly && (namedAnnual || Number(candidate?.size || 0) >= 6 * 1024 * 1024);
   }
 
   function markPageRequirements(psalm, gospel, candidate, profile, pageRanges) {
@@ -5998,7 +6009,7 @@ window.ScoreBankMassSettingsData = {
       baseScore: best?.baseScore || 0,
       distance: best?.distance ?? null,
       candidates
-    };
+};
   }
 
   function isStrongIndexPage(pageText) {
@@ -6998,7 +7009,7 @@ window.ScoreBankMassSettingsData = {
 
         try {
           await appendRasterStandardizedPage(output, item, pageIndex, profile, dependencies);
-          rasterizedPageCount += 1;
+rasterizedPageCount += 1;
         } catch (error) {
           // Some protected PDFs are copyable by pdf-lib but not renderable by PDF.js.
           // Preserve the page natively as a last-resort while still placing it on Letter.
@@ -7998,7 +8009,7 @@ function rememberedMassSetting(parish=state.parish,language=state.language){
 }
 function defaultParishMassSetting(){
   if(rememberedMassSetting())return null;
-  const parish=parishMassKey();
+const parish=parishMassKey();
   const name=parish==='st-agnes'?'Mass Of Christ The Savior':parish==='st-augustine'?'St Agustine Mass Set. OT.':'';
   if(!name)return null;
   return settingsFor().find(item=>normalizeProfileText(item.name)===normalizeProfileText(name))||{id:stableSettingId(name),name,dynamic:true,libraryFolderExact:name,aliases:[name],libraryAliases:[name]};
@@ -8291,7 +8302,7 @@ function enforcePreparationContext(){
   return true;
 }
 function persist(){const safe={...state,compiledMassSettingFile:null,massFolderFiles:[],massFolderCatalog:[],libraryFiles:[],libraryCatalog:null,libraryManifest:null,celebrationModel:state.celebrationModel?.toPlainObject?.()||null};localStorage.setItem('scorebank-v070-build007',JSON.stringify(safe));}
-function welcome(){app.innerHTML=`<section class="card hero"><span class="badge">BUILD 128 · LIBRARY CONNECT RESTORED · OCP PROTEGIDO</span><h1>Weekly Mass Book</h1><p>Selecciona la música en el orden litúrgico. ScoreBank conserva la búsqueda OCP de Difuntos del 2 de noviembre en español e inglés.</p><div class="success"><strong>Regla permanente:</strong> en Domingo / Solemnidad / Calendario, la fecha manda: ScoreBank identifica la celebración y carga automáticamente el Salmo y la Aclamación OCP desde RYA/R&amp;A. La selección manual permanece siempre disponible como alternativa.</div><div class="button-row"><button id="startBtn">Preparar celebración</button></div></section>`;document.getElementById('startBtn').addEventListener('click',renderForm);}
+function welcome(){app.innerHTML=`<section class="card hero"><span class="badge">BUILD 129 · REGRESSION TESTS · OCP PROTEGIDO</span><h1>Weekly Mass Book</h1><p>Selecciona la música en el orden litúrgico. ScoreBank conserva la búsqueda OCP de Difuntos del 2 de noviembre en español e inglés.</p><div class="success"><strong>Regla permanente:</strong> en Domingo / Solemnidad / Calendario, la fecha manda: ScoreBank identifica la celebración y carga automáticamente el Salmo y la Aclamación OCP desde RYA/R&amp;A. La selección manual permanece siempre disponible como alternativa.</div><div class="button-row"><button id="startBtn">Preparar celebración</button></div></section>`;document.getElementById('startBtn').addEventListener('click',renderForm);}
 function calendarFormLiturgicalPreview(date,language,typeValue,e){
   const parsed=parseCelebrationTypeValue(typeValue||'calendar');
   if(parsed.celebrationType!=='calendar')return '';
@@ -8998,7 +9009,7 @@ function resetPreparationTransientState(){
   state.manualSongBookStatus={};
   state.manualLiturgicalQueries={psalm:'',gospel:''};
   state.manualLiturgicalOverrides={psalm:false,gospel:false};
-  state.searchQuery='';
+state.searchQuery='';
   state.indexReviewVisible=false;
   state.preparationContext=null;
   state.planningSuggestions=null;
@@ -9120,7 +9131,9 @@ function bindSuggestions(renderTarget='result'){
   document.querySelectorAll('.manual-song-query').forEach(input=>input.addEventListener('keydown',(event)=>{
     if(event.key!=='Enter')return;
     event.preventDefault();
-    runManualSongSearch(input.dataset.moment,input.value||'');
+    // SEALED SB-SONG-001: Return/Enter explicitly selects a typed song.
+    // The Search button remains available to look for PDF matches first.
+    applyManualSongTitle(input.dataset.moment,input.value||'');
   }));
   document.querySelectorAll('.manual-song-use-title').forEach(btn=>btn.addEventListener('click',()=>applyManualSongTitle(btn.dataset.moment,btn.dataset.title||'')));
   document.querySelectorAll('.manual-song-match-btn').forEach(btn=>btn.addEventListener('click',(event)=>{event.preventDefault();event.stopPropagation();applyManualSongTitle(btn.dataset.moment,btn.dataset.title||'',btn.dataset.path||'');}));
@@ -9337,12 +9350,15 @@ function connectionDashboard(e){
       : (e?'No conectada en esta sesión.':'Not connected in this session.'));
   const libraryBadge=libraryTotal?(e?'Conectada':'Connected'):(e?'Conectar':'Connect');
   const massBadge=massTotal?(e?'Conectada':'Connected'):(libraryMassCount?(e?'En Library':'In Library'):(e?'Conectar':'Connect'));
-  return `<section class="connection-dashboard"><div class="connection-dashboard-head"><div><h3>${e?'Conexiones de biblioteca':'Library connections'}</h3><p>${e?'Comprueba esto primero. Las búsquedas y selecciones de esta preparación usarán las bibliotecas conectadas aquí.':'Check this first. Searches and selections for this preparation will use the libraries connected here.'}</p></div></div><div class="connection-grid"><div class="connection-card ${libraryTotal?'connected':''}"><div class="connection-card-head"><strong>ScoreBank LIBRARY</strong><span class="badge">${libraryBadge}</span></div><label>${e?'Conectar / Actualizar ScoreBank LIBRARY':'Connect / Refresh ScoreBank LIBRARY'}</label><input id="libraryFolderInputTop" type="file" webkitdirectory directory multiple accept="application/pdf,.pdf"><div class="folder-status">${esc(libraryStatus)}</div></div><div class="connection-card ${massTotal?'connected':''}"><div class="connection-card-head"><strong>03 Mass Settings</strong><span class="badge">${massBadge}</span></div><label>${e?'Cambiar carpeta de Mass Settings (opcional)':'Change Mass Settings folder (optional)'}</label><input id="massFolderInputTop" type="file" webkitdirectory directory multiple><div class="folder-status">${esc(massStatus)}</div></div></div></section>`;
+  return `<section class="connection-dashboard"><div class="connection-dashboard-head"><div><h3>${e?'Conexiones de biblioteca':'Library connections'}</h3><p>${e?'Comprueba esto primero. Las búsquedas y selecciones de esta preparación usarán las bibliotecas conectadas aquí.':'Check this first. Searches and selections for this preparation will use the libraries connected here.'}</p></div></div><div class="connection-grid"><div class="connection-card ${libraryTotal?'connected':''}"><div class="connection-card-head"><strong>ScoreBank LIBRARY</strong><span class="badge">${libraryBadge}</span></div><label>${e?'Conectar / Actualizar ScoreBank LIBRARY':'Connect / Refresh ScoreBank LIBRARY'}</label><input id="libraryFolderInputTop" type="file" webkitdirectory directory multiple accept="application/pdf,.pdf"><label style="margin-top:10px">${e?'En iPhone/iPad, si la carpeta no carga, selecciona los PDF de tu biblioteca directamente':'On iPhone/iPad, if folder loading fails, select your library PDF files directly'}</label><input id="libraryFilesFallbackTop" type="file" multiple accept="application/pdf,.pdf"><div class="folder-status">${esc(libraryStatus)}</div></div><div class="connection-card ${massTotal?'connected':''}"><div class="connection-card-head"><strong>03 Mass Settings</strong><span class="badge">${massBadge}</span></div><label>${e?'Cambiar carpeta de Mass Settings (opcional)':'Change Mass Settings folder (optional)'}</label><input id="massFolderInputTop" type="file" webkitdirectory directory multiple><div class="folder-status">${esc(massStatus)}</div></div></div></section>`;
 }
 function renderConnectionTarget(target){if(target==='index')indexView();else result();}
-async function applyLibraryFolderFiles(fileList,target='result'){
+async function applyLibraryFolderFiles(fileList,target='result',merge=false){
   if(target==='index')save();
-  const files=[...(fileList||[])].filter(file=>/\.pdf$/i.test(file.name));
+  const picked=[...(fileList||[])].filter(file=>/\.pdf$/i.test(file.name));
+  const combined=merge?[...(state.libraryFiles||[]),...picked]:picked;
+  const seen=new Set();
+  const files=combined.filter(file=>{const key=`${file.webkitRelativePath||file.name}::${file.size}::${file.lastModified}`;if(seen.has(key))return false;seen.add(key);return true;});
   if(!files.length){
     state.libraryScanStatus='error';
     state.libraryFolderName='';
@@ -9356,7 +9372,9 @@ async function applyLibraryFolderFiles(fileList,target='result'){
   state.libraryCatalog=window.ScoreBankLibraryMatchResolver?.createBrowserCatalog?.(files)||[];
   connectEmbeddedMassSettings();
   purgeStaleLibraryReferences();
-  state.libraryFolderName=state.libraryCatalog[0]?.relativePath?.split('/')[0]||'ScoreBank LIBRARY';
+  state.libraryFolderName=files.some(file=>file.webkitRelativePath)
+    ?(state.libraryCatalog.find(item=>item.relativePath.includes('/'))?.relativePath?.split('/')[0]||'ScoreBank LIBRARY')
+    :'ScoreBank LIBRARY · PDFs seleccionados';
   state.libraryStats={totalFiles:state.libraryCatalog.length,totalGroupedWorks:state.libraryCatalog.length,scanDurationMs:0};
   state.libraryScanStatus='success';
   autoPinKnownCompiledMassSetting();
@@ -9425,6 +9443,10 @@ async function applyMassFolderFiles(fileList,target='result'){
 function bindConnectionDashboard(target='result'){
   const library=document.getElementById('libraryFolderInputTop');
   if(library)library.addEventListener('change',()=>applyLibraryFolderFiles(library.files,target));
+  // SEALED SB-IPHONE-001: Apple's document picker can select a directory
+  // without supplying its child File objects. Permit ordinary multi-PDF picks.
+  const fallback=document.getElementById('libraryFilesFallbackTop');
+  if(fallback)fallback.addEventListener('change',()=>applyLibraryFolderFiles(fallback.files,target,true));
   const mass=document.getElementById('massFolderInputTop');
   if(mass)mass.addEventListener('change',()=>applyMassFolderFiles(mass.files,target));
 }
@@ -9998,7 +10020,7 @@ function memorialChoiceMarkup(entry,e,selected,selectedCandidate,labels){
 
 function additionalVersionsMarkup(entry,e,selected,visibleCandidates){
   if(!PLANNING_LIBRARY_KEYS.includes(entry?.key)||!selected)return '';
-  const candidates=Array.from(visibleCandidates||[]).filter(candidate=>candidate?.relativePath&&candidate.relativePath!==selected);
+const candidates=Array.from(visibleCandidates||[]).filter(candidate=>candidate?.relativePath&&candidate.relativePath!==selected);
   if(!candidates.length)return '';
   const extras=new Set(extraSelectionPaths(entry.key));
   const options=candidates.map(candidate=>{
