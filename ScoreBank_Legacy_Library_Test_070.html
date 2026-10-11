@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ScoreBank Legacy Library Test</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;margin:0;background:#f3f5f9;color:#172033}
+header{background:#172033;color:white;padding:22px 18px;font-size:26px;font-weight:800}
+main{padding:18px;max-width:760px;margin:auto}
+.card{background:white;border:1px solid #d8deea;border-radius:16px;padding:18px}
+.badge{display:inline-block;background:#eaf7f0;color:#18794e;border-radius:999px;padding:6px 10px;font-weight:800}
+input{display:block;width:100%;margin-top:14px;padding:14px;border:1px solid #bcc6d6;border-radius:12px;font-size:17px}
+#status{margin-top:16px;padding:14px;border-radius:12px;background:#fff7df;border:1px solid #efd58c;white-space:pre-wrap;line-height:1.45}
+small{display:block;margin-top:12px;color:#667085;line-height:1.4}
+</style>
+</head>
+<body>
+<header>🎼 ScoreBank · Legacy Library Test</header>
+<main>
+<div class="card">
+<span class="badge">PRE-FUNERAL CONNECTION PATTERN · BUILD 070 ERA</span>
+<h2>ScoreBank LIBRARY</h2>
+<p>This page isolates the old browser folder handoff used before the funeral workflow. It does not run OCP, PDF analysis, Mass Settings, or planning.</p>
+<label><strong>Select ScoreBank LIBRARY</strong></label>
+<input id="legacyFolder" type="file" webkitdirectory directory multiple accept="application/pdf,.pdf">
+<div id="status">Waiting. Tap Choose Files, select the ScoreBank LIBRARY folder, and confirm it.</div>
+<small>Test goal: determine whether current iPhone Safari still hands a folder FileList to the exact legacy-style control.</small>
+</div>
+</main>
+<script>
+const input=document.getElementById('legacyFolder');
+const status=document.getElementById('status');
+let started=0;
+function showFiles(eventName){
+  const raw=[...(input.files||[])];
+  const pdfs=raw.filter(f=>/\.pdf$/i.test(f.name));
+  const elapsed=started?Math.round(performance.now()-started):0;
+  if(!raw.length){
+    status.textContent=eventName+' fired, but Safari delivered 0 files.';
+    return;
+  }
+  const roots=[...new Set(raw.map(f=>(f.webkitRelativePath||'').split('/')[0]).filter(Boolean))];
+  status.textContent='CONNECTED\n'+
+    'Event: '+eventName+'\n'+
+    'Files delivered: '+raw.length+'\n'+
+    'PDF files: '+pdfs.length+'\n'+
+    'Root: '+(roots.join(', ')||'(no relative path)')+'\n'+
+    'Handoff time: '+elapsed+' ms';
+}
+input.addEventListener('click',()=>{
+  started=performance.now();
+  status.textContent='Picker opened. Waiting for Safari/iCloud to deliver the legacy folder FileList…';
+});
+input.addEventListener('input',()=>showFiles('input'));
+input.addEventListener('change',()=>showFiles('change'));
+window.addEventListener('focus',()=>{
+  if(started && !(input.files&&input.files.length)){
+    setTimeout(()=>{
+      if(!(input.files&&input.files.length)){
+        status.textContent='Returned from picker, but Safari has delivered 0 files to the legacy control.';
+      }
+    },1000);
+  }
+});
+</script>
+</body>
+</html>
